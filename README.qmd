@@ -1,0 +1,62 @@
+---
+format:
+  gfm:
+    default-image-extension: ""
+---
+
+<!-- README.md is generated from README.qmd. Please edit that file -->
+
+```{r}
+#| include: false
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# surveyAnalysis
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of surveyAnalysis is to provide functions to process Qualtrics survey data into common outputs like lollipop charts and codebooks.
+
+## Installation
+
+You can install the development version of surveyAnalysis like so:
+
+``` r
+# install.packages("pak")
+pak::pkg_install("stephan-koenig/survey-analysis")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r}
+#| label: example
+library(surveyAnalysis)
+## basic example code
+```
+
+What is special about using `README.qmd` instead of just `README.md`? You can include R chunks like so:
+
+```{r}
+#| label: cars
+summary(cars)
+```
+
+You'll still need to render `README.qmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this.
+
+You can also embed plots, for example:
+
+```{r}
+#| label: pressure
+#| echo: false
+plot(pressure)
+```
+
+In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
