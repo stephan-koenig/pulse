@@ -1,0 +1,11 @@
+Package: surveyAnalysis
+Title: Analyze Qualtrics Data
+Version: 0.0.0.9000
+Authors@R:
+    person("Stephan", "König", , "stephan.koenig@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1597-3628"))
+Description: Functions to analyze Qualtrics data.
+License: MIT + file LICENSE
+Config/roxygen2/version: 8.1.0
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
