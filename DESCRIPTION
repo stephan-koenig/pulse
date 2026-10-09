@@ -9,3 +9,12 @@ License: MIT + file LICENSE
 Config/roxygen2/version: 8.1.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
+Imports: 
+    cli,
+    fs,
+    glue,
+    here,
+    janitor,
+    keyring,
+    qs2,
+    qualtRics
