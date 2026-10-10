@@ -6,18 +6,24 @@ Authors@R:
            comment = c(ORCID = "0000-0002-1597-3628"))
 Description: Functions to analyze Qualtrics data.
 License: MIT + file LICENSE
-Config/roxygen2/version: 8.1.0
+Config/roxygen2/version: 8.1.1
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 Imports: 
     cli,
+    dplyr,
     fs,
     glue,
     here,
     janitor,
     keyring,
+    purrr,
     qs2,
-    qualtRics
+    qualtRics,
+    rlang,
+    sjlabelled,
+    tibble,
+    tidyr
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
