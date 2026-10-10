@@ -1,18 +1,19 @@
 #' Load Qualtrics survey data
 #'
+#' @description
 #' Load data frame of Qualtrics survey data. If no local copy exists, also
 #' downloads survey from Qualtrics and saves a local copy.
 #'
 #' @param base_url A character scalar. Your institution-specific base URL for
-#' your Qualtrics account without `https://`. Find your base URL at
-#' [Base URL and Datacenter IDs | Qualtrics API Docs](https://api.qualtrics.com/1aea264443797-base-url-and-datacenter-i-ds).
+#'   your Qualtrics account without `https://`. Find your base URL at
+#'   [Base URL and Datacenter IDs | Qualtrics API Docs](https://api.qualtrics.com/1aea264443797-base-url-and-datacenter-i-ds).
 #' @param survey_name A character scalar. The survey name on Qualtrics.
 #' @param file A character scalar. File to write to or load from.
 #' @param api_keyring_id A character scalar. Name of your Qualtrics API token as
-#' saved in your operating system's credential store and accessed with
-#' [keyring]. See
-#' [Generating an API Token | Getting Started with the Qualtrics API](https://www.qualtrics.com/support/integrations/api-integration/overview/#GeneratingAnAPIToken)
-#' for more information. Default is `"qualtrics_api_key"`.
+#'   saved in your operating system's credential store and accessed with
+#'   [keyring]. See
+#'   [Generating an API Token | Getting Started with the Qualtrics API](https://www.qualtrics.com/support/integrations/api-integration/overview/#GeneratingAnAPIToken)
+#'   for more information. Default is `"qualtrics_api_key"`.
 #'
 #' @returns A data frame.
 #'
