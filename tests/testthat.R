@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(surveyAnalysis)
+library(pulse)
 
-test_check("surveyAnalysis")
+test_check("pulse")

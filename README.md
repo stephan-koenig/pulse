@@ -2,22 +2,22 @@
 
 <!-- README.md is generated from README.qmd. Please edit that file -->
 
-# surveyAnalysis
+# pulse
 
 <!-- badges: start -->
 
 <!-- badges: end -->
 
-The goal of surveyAnalysis is to provide functions to process Qualtrics
-survey data into common outputs like lollipop charts and codebooks.
+The goal of pulse is to provide functions to process Qualtrics survey
+data into common outputs like lollipop charts and codebooks.
 
 ## Installation
 
-You can install the development version of surveyAnalysis like so:
+You can install the development version of pulse like so:
 
 ``` r
 # install.packages("pak")
-pak::pkg_install("stephan-koenig/survey-analysis")
+pak::pak("stephan-koenig/pulse")
 ```
 
 ## Example
@@ -25,7 +25,7 @@ pak::pkg_install("stephan-koenig/survey-analysis")
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-library(surveyAnalysis)
+library(pulse)
 ## basic example code
 ```
 

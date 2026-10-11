@@ -1,4 +1,4 @@
-Package: surveyAnalysis
+Package: pulse
 Title: Analyze Qualtrics Data
 Version: 0.0.0.9000
 Authors@R:
@@ -9,7 +9,7 @@ License: MIT + file LICENSE
 Config/roxygen2/version: 8.1.1
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-Imports: 
+Imports:
     cli,
     dplyr,
     fs,
@@ -24,6 +24,6 @@ Imports:
     sjlabelled,
     tibble,
     tidyr
-Suggests: 
+Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
