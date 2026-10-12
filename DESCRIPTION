@@ -6,6 +6,8 @@ Authors@R:
            comment = c(ORCID = "0000-0002-1597-3628"))
 Description: Functions to analyze Qualtrics data.
 License: MIT + file LICENSE
+URL: https://github.com/stephan-koenig/pulse
+BugReports: https://github.com/stephan-koenig/pulse/issues
 Config/roxygen2/version: 8.1.1
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
