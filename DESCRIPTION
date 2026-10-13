@@ -13,8 +13,10 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 Imports:
     cli,
+    commonmark,
     dplyr,
     fs,
+    ggplot2,
     glue,
     here,
     janitor,
@@ -24,6 +26,7 @@ Imports:
     qualtRics,
     rlang,
     sjlabelled,
+    stringr,
     tibble,
     tidyr
 Suggests:
