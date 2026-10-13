@@ -35,13 +35,21 @@ str_wrap_md <- function(string, width = 80, sep = "<br>") {
     c(initial_strings, expanded_string)
   }
 
-  string |>
-    stringr::str_extract_all(
-      # Keep base character and super- or subscript as a single token
-      "[^\\s-]+<(sup|sub)\\b[^>]*>.*?</\\1>|[^\\s-]*-|[^\\s-]+"
-    ) |>
-    purrr::map(\(string) purrr::reduce(string, expand_last_str_md)) |>
-    purrr::map_chr(\(string) paste(string, collapse = sep))
+  purrr::map_chr(string, \(element) {
+    if (is.na(element)) {
+      return(NA_character_)
+    }
+
+    pattern <- "[^\\s-]+<(sup|sub)\\b[^>]*>.*?</\\1>|[^\\s-]*-|[^\\s-]+"
+    tokens <- stringr::str_extract_all(element, pattern)[[1]]
+
+    if (length(tokens) == 0L) {
+      return("")
+    }
+
+    wrapped_string <- purrr::reduce(tokens, expand_last_str_md)
+    paste(wrapped_string, collapse = sep)
+  })
 }
 
 str_length_md <- function(string) {
