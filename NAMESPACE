@@ -3,6 +3,7 @@
 export(label_wrap_gen_md)
 export(load_survey)
 export(pivot_labels_longer)
+export(str_wrap_md)
 importFrom(rlang,
   ":=",
   .data
