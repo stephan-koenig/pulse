@@ -20,9 +20,10 @@
 #' @export
 #' @importFrom rlang .data
 #' @importFrom rlang :=
-# Adapted from Navarro, Danielle. 2026.
-# "Markdown Styling in R Plots and Tables." July 3.
-# https://blog.djnavarro.net/posts/2026-07-03_subscript/.
+#' @references
+#' Adapted from Navarro, Danielle. 2026.
+#' "Markdown Styling in R Plots and Tables." July 3.
+#' <https://blog.djnavarro.net/posts/2026-07-03_subscript/>.
 pivot_labels_longer <- function(
   data,
   cols,

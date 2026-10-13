@@ -46,3 +46,8 @@ A data frame.
 increasing the number of rows and decreasing the number of columns. The
 column labels are preserved in the column \code{labels_to}.
 }
+\references{
+Adapted from Navarro, Danielle. 2026.
+"Markdown Styling in R Plots and Tables." July 3.
+\url{https://blog.djnavarro.net/posts/2026-07-03_subscript/}.
+}
