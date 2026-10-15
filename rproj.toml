@@ -1,0 +1,53 @@
+[project]
+name = "pulse"
+version = "0.0.0.9000"
+type = "package"
+title = "Analyze Qualtrics Data"
+description = "Functions to analyze Qualtrics data."
+license = "MIT + file LICENSE"
+
+[[project.authors]]
+name = "Stephan König"
+email = "stephan.koenig@gmail.com"
+roles = [
+    "aut",
+    "cre",
+]
+orcid = "0000-0002-1597-3628"
+
+[project.urls]
+bugreports = "https://github.com/stephan-koenig/pulse/issues"
+homepage = "https://github.com/stephan-koenig/pulse"
+
+[dependencies]
+R = ">= 4.6"
+cli = "*"
+commonmark = "*"
+dplyr = "*"
+fs = "*"
+ggplot2 = "*"
+glue = "*"
+here = "*"
+janitor = "*"
+keyring = "*"
+purrr = "*"
+qs2 = "*"
+qualtRics = "*"
+rlang = "*"
+sjlabelled = "*"
+stringr = "*"
+tibble = "*"
+tidyr = "*"
+
+[dependency-groups.dev]
+testthat = ">= 3.0.0"
+
+[config.roxygen2]
+version = "8.1.1"
+
+[config.testthat]
+edition = 3
+
+[description]
+Encoding = "UTF-8"
+Roxygen = "list(markdown = TRUE)"

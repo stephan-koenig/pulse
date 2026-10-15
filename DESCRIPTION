@@ -1,16 +1,15 @@
+Config/rig/note: This file was created by rig, do not edit it manually
 Package: pulse
 Title: Analyze Qualtrics Data
 Version: 0.0.0.9000
-Authors@R:
-    person("Stephan", "König", , "stephan.koenig@gmail.com", role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0002-1597-3628"))
+Authors@R: person("Stephan König", email = "stephan.koenig@gmail.com",
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-1597-3628"))
 Description: Functions to analyze Qualtrics data.
 License: MIT + file LICENSE
 URL: https://github.com/stephan-koenig/pulse
 BugReports: https://github.com/stephan-koenig/pulse/issues
-Config/roxygen2/version: 8.1.1
-Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
+Depends:
+    R (>= 4.6)
 Imports:
     cli,
     commonmark,
@@ -31,4 +30,7 @@ Imports:
     tidyr
 Suggests:
     testthat (>= 3.0.0)
+Config/roxygen2/version: 8.1.1
 Config/testthat/edition: 3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
