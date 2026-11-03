@@ -6,3 +6,5 @@
 ^\.rvenvlib$
 ^rproj\.lock$
 ^rproj\.toml$
+^[.]?air[.]toml$
+^\.vscode$
