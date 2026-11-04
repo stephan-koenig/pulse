@@ -46,10 +46,6 @@ name = "here"
 constraint = "*"
 
 [[targets.direct_dependencies]]
-name = "janitor"
-constraint = "*"
-
-[[targets.direct_dependencies]]
 name = "keyring"
 constraint = "*"
 
@@ -492,30 +488,6 @@ groups = ["main"]
 metadata = { RemoteHash = "7132834cf3c3388eff12bad376d69fbcf8275acc37d36c290e59174fe3c7f3eb" }
 
 [[targets.packages]]
-package = "janitor"
-version = "2.2.1"
-binary = true
-platform = "aarch64-apple-darwin"
-dependencies = [
-    "hms",
-    "stringi",
-    "lifecycle",
-    "stringr",
-    "snakecase",
-    "tidyr",
-    "lubridate",
-    "purrr",
-    "dplyr",
-    "rlang",
-    "magrittr",
-    "tidyselect",
-]
-sources = ["https://p3m.dev/cran/2024-12-23/bin/macosx/sonoma-arm64/contrib/4.6/janitor_2.2.1.tgz"]
-target = "bin/macosx/sonoma-arm64/4.6/janitor_2.2.1-1f2717b0.tgz"
-groups = ["main"]
-metadata = { RemoteHash = "27c401302a62cafe8e68e66a51073834bc7930872282e0feb151d13629ae6cdf" }
-
-[[targets.packages]]
 package = "withr"
 version = "3.0.3"
 binary = true
@@ -833,18 +805,15 @@ groups = ["main"]
 metadata = { RemoteHash = "f059f27e2a5c82e351fe05b87ad712f7afc273c651450453f59d99af5deeacea" }
 
 [[targets.packages]]
-package = "snakecase"
-version = "0.11.1"
+package = "labeling"
+version = "0.4.3"
 binary = true
 platform = "aarch64-apple-darwin"
-dependencies = [
-    "stringi",
-    "stringr",
-]
-sources = ["https://p3m.dev/cran/2023-08-28/bin/macosx/sonoma-arm64/contrib/4.6/snakecase_0.11.1.tgz"]
-target = "bin/macosx/sonoma-arm64/4.6/snakecase_0.11.1-de62b102.tgz"
+dependencies = []
+sources = ["https://p3m.dev/cran/2023-08-30/bin/macosx/sonoma-arm64/contrib/4.6/labeling_0.4.3.tgz"]
+target = "bin/macosx/sonoma-arm64/4.6/labeling_0.4.3-578161a0.tgz"
 groups = ["main"]
-metadata = { RemoteHash = "2a5f9791337ca42e392f23fb873eb44f74810583e9aa7c62fda2f28f9e750821" }
+metadata = { RemoteHash = "c62f4fc2cc74377d7055903c5f1913b7295f7587456fe468592738a483e264f2" }
 
 [[targets.packages]]
 package = "pkgload"
@@ -866,17 +835,6 @@ sources = ["https://p3m.dev/cran/2026-06-16/bin/macosx/sonoma-arm64/contrib/4.6/
 target = "bin/macosx/sonoma-arm64/4.6/pkgload_1.5.3-83cb9fd0.tgz"
 groups = ["dev"]
 metadata = { RemoteHash = "5e539f91ca36b8ed80933101baf2a57462b9342c68556f5d4dcb86c01639df28" }
-
-[[targets.packages]]
-package = "labeling"
-version = "0.4.3"
-binary = true
-platform = "aarch64-apple-darwin"
-dependencies = []
-sources = ["https://p3m.dev/cran/2023-08-30/bin/macosx/sonoma-arm64/contrib/4.6/labeling_0.4.3.tgz"]
-target = "bin/macosx/sonoma-arm64/4.6/labeling_0.4.3-578161a0.tgz"
-groups = ["main"]
-metadata = { RemoteHash = "c62f4fc2cc74377d7055903c5f1913b7295f7587456fe468592738a483e264f2" }
 
 [[targets.packages]]
 package = "pillar"
@@ -911,15 +869,20 @@ groups = ["main"]
 metadata = { RemoteHash = "0bc5d10e5a34285d4f9e9c572c058c386b9e1515d8faebc1496b2680138280a8" }
 
 [[targets.packages]]
-package = "cpp11"
-version = "0.5.5"
+package = "vctrs"
+version = "0.7.3"
 binary = true
 platform = "aarch64-apple-darwin"
-dependencies = []
-sources = ["https://p3m.dev/cran/2026-05-07/bin/macosx/sonoma-arm64/contrib/4.6/cpp11_0.5.5.tgz"]
-target = "bin/macosx/sonoma-arm64/4.6/cpp11_0.5.5-73034f81.tgz"
+dependencies = [
+    "cli",
+    "glue",
+    "lifecycle",
+    "rlang",
+]
+sources = ["https://p3m.dev/cran/2026-04-12/bin/macosx/sonoma-arm64/contrib/4.6/vctrs_0.7.3.tgz"]
+target = "bin/macosx/sonoma-arm64/4.6/vctrs_0.7.3-fd6ec28d.tgz"
 groups = ["main"]
-metadata = { RemoteHash = "72486beb0605c1229bf3d422cd536224af8dc09bd389a3116f62f4c7705c62f4" }
+metadata = { RemoteHash = "b45078413e06ac624dddb7221a3a43908b405c8abec09822cb86638d30b0435b" }
 
 [[targets.packages]]
 package = "magrittr"
@@ -936,20 +899,15 @@ groups = [
 metadata = { RemoteHash = "3f5b5b1d4e6d12807a95c50b6c88cb1d8af2c5eb5213f08bfe58f278eca2ed23" }
 
 [[targets.packages]]
-package = "vctrs"
-version = "0.7.3"
+package = "cpp11"
+version = "0.5.5"
 binary = true
 platform = "aarch64-apple-darwin"
-dependencies = [
-    "cli",
-    "glue",
-    "lifecycle",
-    "rlang",
-]
-sources = ["https://p3m.dev/cran/2026-04-12/bin/macosx/sonoma-arm64/contrib/4.6/vctrs_0.7.3.tgz"]
-target = "bin/macosx/sonoma-arm64/4.6/vctrs_0.7.3-fd6ec28d.tgz"
+dependencies = []
+sources = ["https://p3m.dev/cran/2026-05-07/bin/macosx/sonoma-arm64/contrib/4.6/cpp11_0.5.5.tgz"]
+target = "bin/macosx/sonoma-arm64/4.6/cpp11_0.5.5-73034f81.tgz"
 groups = ["main"]
-metadata = { RemoteHash = "b45078413e06ac624dddb7221a3a43908b405c8abec09822cb86638d30b0435b" }
+metadata = { RemoteHash = "72486beb0605c1229bf3d422cd536224af8dc09bd389a3116f62f4c7705c62f4" }
 
 [[targets.packages]]
 package = "keyring"
@@ -1254,7 +1212,6 @@ dependencies = [
     "ggplot2",
     "glue",
     "here",
-    "janitor",
     "keyring",
     "purrr",
     "qs2",
@@ -1269,7 +1226,7 @@ sources = ["."]
 target = ""
 groups = ["main"]
 is_project = true
-metadata = { RemoteSha = "a173d0b90a4bb31dddbdd9baeca3111e7adaf483e4e4a516a01f2a6efac852d5", RemoteType = "local", RemoteUrl = "." }
+metadata = { RemoteSha = "79b1b734dbed82224facc7881a97bd078d9cd717adfa1ddb4dfee1303edc96fc", RemoteType = "local", RemoteUrl = "." }
 
 [[targets]]
 r_version = "4.6.1"
@@ -1306,10 +1263,6 @@ constraint = "*"
 
 [[targets.direct_dependencies]]
 name = "here"
-constraint = "*"
-
-[[targets.direct_dependencies]]
-name = "janitor"
 constraint = "*"
 
 [[targets.direct_dependencies]]
@@ -1759,30 +1712,6 @@ groups = ["main"]
 metadata = { RemoteHash = "7132834cf3c3388eff12bad376d69fbcf8275acc37d36c290e59174fe3c7f3eb" }
 
 [[targets.packages]]
-package = "janitor"
-version = "2.2.1"
-binary = false
-platform = "source"
-dependencies = [
-    "hms",
-    "stringi",
-    "lifecycle",
-    "stringr",
-    "snakecase",
-    "tidyr",
-    "lubridate",
-    "purrr",
-    "dplyr",
-    "rlang",
-    "magrittr",
-    "tidyselect",
-]
-sources = ["https://p3m.dev/cran/2024-12-23/src/contrib/janitor_2.2.1.tar.gz"]
-target = "src/janitor_2.2.1-1f2717b0.tar.gz"
-groups = ["main"]
-metadata = { RemoteHash = "27c401302a62cafe8e68e66a51073834bc7930872282e0feb151d13629ae6cdf" }
-
-[[targets.packages]]
 package = "withr"
 version = "3.0.3"
 binary = false
@@ -2103,18 +2032,15 @@ groups = ["main"]
 metadata = { RemoteHash = "f059f27e2a5c82e351fe05b87ad712f7afc273c651450453f59d99af5deeacea" }
 
 [[targets.packages]]
-package = "snakecase"
-version = "0.11.1"
+package = "labeling"
+version = "0.4.3"
 binary = false
 platform = "source"
-dependencies = [
-    "stringi",
-    "stringr",
-]
-sources = ["https://p3m.dev/cran/2023-08-28/src/contrib/snakecase_0.11.1.tar.gz"]
-target = "src/snakecase_0.11.1-de62b102.tar.gz"
+dependencies = []
+sources = ["https://p3m.dev/cran/2023-08-30/src/contrib/labeling_0.4.3.tar.gz"]
+target = "src/labeling_0.4.3-578161a0.tar.gz"
 groups = ["main"]
-metadata = { RemoteHash = "2a5f9791337ca42e392f23fb873eb44f74810583e9aa7c62fda2f28f9e750821" }
+metadata = { RemoteHash = "c62f4fc2cc74377d7055903c5f1913b7295f7587456fe468592738a483e264f2" }
 
 [[targets.packages]]
 package = "pkgload"
@@ -2136,17 +2062,6 @@ sources = ["https://p3m.dev/cran/2026-06-16/src/contrib/pkgload_1.5.3.tar.gz"]
 target = "src/pkgload_1.5.3-83cb9fd0.tar.gz"
 groups = ["dev"]
 metadata = { RemoteHash = "5e539f91ca36b8ed80933101baf2a57462b9342c68556f5d4dcb86c01639df28" }
-
-[[targets.packages]]
-package = "labeling"
-version = "0.4.3"
-binary = false
-platform = "source"
-dependencies = []
-sources = ["https://p3m.dev/cran/2023-08-30/src/contrib/labeling_0.4.3.tar.gz"]
-target = "src/labeling_0.4.3-578161a0.tar.gz"
-groups = ["main"]
-metadata = { RemoteHash = "c62f4fc2cc74377d7055903c5f1913b7295f7587456fe468592738a483e264f2" }
 
 [[targets.packages]]
 package = "pillar"
@@ -2182,15 +2097,20 @@ system_requirements = "A system with zoneinfo data (e.g. /usr/share/zoneinfo). O
 metadata = { RemoteHash = "0bc5d10e5a34285d4f9e9c572c058c386b9e1515d8faebc1496b2680138280a8" }
 
 [[targets.packages]]
-package = "cpp11"
-version = "0.5.5"
+package = "vctrs"
+version = "0.7.3"
 binary = false
 platform = "source"
-dependencies = []
-sources = ["https://p3m.dev/cran/2026-05-07/src/contrib/cpp11_0.5.5.tar.gz"]
-target = "src/cpp11_0.5.5-73034f81.tar.gz"
+dependencies = [
+    "cli",
+    "glue",
+    "lifecycle",
+    "rlang",
+]
+sources = ["https://p3m.dev/cran/2026-04-12/src/contrib/vctrs_0.7.3.tar.gz"]
+target = "src/vctrs_0.7.3-fd6ec28d.tar.gz"
 groups = ["main"]
-metadata = { RemoteHash = "72486beb0605c1229bf3d422cd536224af8dc09bd389a3116f62f4c7705c62f4" }
+metadata = { RemoteHash = "b45078413e06ac624dddb7221a3a43908b405c8abec09822cb86638d30b0435b" }
 
 [[targets.packages]]
 package = "magrittr"
@@ -2207,20 +2127,15 @@ groups = [
 metadata = { RemoteHash = "3f5b5b1d4e6d12807a95c50b6c88cb1d8af2c5eb5213f08bfe58f278eca2ed23" }
 
 [[targets.packages]]
-package = "vctrs"
-version = "0.7.3"
+package = "cpp11"
+version = "0.5.5"
 binary = false
 platform = "source"
-dependencies = [
-    "cli",
-    "glue",
-    "lifecycle",
-    "rlang",
-]
-sources = ["https://p3m.dev/cran/2026-04-12/src/contrib/vctrs_0.7.3.tar.gz"]
-target = "src/vctrs_0.7.3-fd6ec28d.tar.gz"
+dependencies = []
+sources = ["https://p3m.dev/cran/2026-05-07/src/contrib/cpp11_0.5.5.tar.gz"]
+target = "src/cpp11_0.5.5-73034f81.tar.gz"
 groups = ["main"]
-metadata = { RemoteHash = "b45078413e06ac624dddb7221a3a43908b405c8abec09822cb86638d30b0435b" }
+metadata = { RemoteHash = "72486beb0605c1229bf3d422cd536224af8dc09bd389a3116f62f4c7705c62f4" }
 
 [[targets.packages]]
 package = "keyring"
@@ -2529,7 +2444,6 @@ dependencies = [
     "ggplot2",
     "glue",
     "here",
-    "janitor",
     "keyring",
     "purrr",
     "qs2",
@@ -2544,7 +2458,7 @@ sources = ["."]
 target = ""
 groups = ["main"]
 is_project = true
-metadata = { RemoteSha = "a173d0b90a4bb31dddbdd9baeca3111e7adaf483e4e4a516a01f2a6efac852d5", RemoteType = "local", RemoteUrl = "." }
+metadata = { RemoteSha = "79b1b734dbed82224facc7881a97bd078d9cd717adfa1ddb4dfee1303edc96fc", RemoteType = "local", RemoteUrl = "." }
 
 [[targets]]
 r_version = "4.6.1"
@@ -2581,10 +2495,6 @@ constraint = "*"
 
 [[targets.direct_dependencies]]
 name = "here"
-constraint = "*"
-
-[[targets.direct_dependencies]]
-name = "janitor"
 constraint = "*"
 
 [[targets.direct_dependencies]]
@@ -3030,30 +2940,6 @@ groups = ["main"]
 metadata = { RemoteHash = "7132834cf3c3388eff12bad376d69fbcf8275acc37d36c290e59174fe3c7f3eb" }
 
 [[targets.packages]]
-package = "janitor"
-version = "2.2.1"
-binary = true
-platform = "x86_64-unknown-linux-gnu"
-dependencies = [
-    "hms",
-    "stringi",
-    "lifecycle",
-    "stringr",
-    "snakecase",
-    "tidyr",
-    "lubridate",
-    "purrr",
-    "dplyr",
-    "rlang",
-    "magrittr",
-    "tidyselect",
-]
-sources = ["https://p3m.dev/cran/2024-12-23/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/janitor_2.2.1.tar.gz"]
-target = "bin/linux/manylinux_2_28-x86_64/4.6/janitor_2.2.1-1f2717b0.tar.gz"
-groups = ["main"]
-metadata = { RemoteHash = "27c401302a62cafe8e68e66a51073834bc7930872282e0feb151d13629ae6cdf" }
-
-[[targets.packages]]
 package = "withr"
 version = "3.0.3"
 binary = true
@@ -3288,11 +3174,11 @@ metadata = { RemoteHash = "47aac79f889a828a5f8b4756cb972d7c2966bb984cbae17a4bd23
 [[targets.packages]]
 package = "S7"
 version = "0.2.2"
-binary = false
-platform = "source"
+binary = true
+platform = "x86_64-unknown-linux-gnu"
 dependencies = []
-sources = ["https://p3m.dev/cran/2026-04-23/src/contrib/S7_0.2.2.tar.gz"]
-target = "src/S7_0.2.2-4c0c9d16.tar.gz"
+sources = ["https://p3m.dev/cran/2026-04-23/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/S7_0.2.2.tar.gz"]
+target = "bin/linux/manylinux_2_28-x86_64/4.6/S7_0.2.2-4c0c9d16.tar.gz"
 groups = ["main"]
 metadata = { RemoteHash = "6f33245dde05b74265b1c4d379e034bc3a8923d41e7b52e6e75a75ce97d42af7" }
 
@@ -3371,18 +3257,15 @@ groups = ["main"]
 metadata = { RemoteHash = "f059f27e2a5c82e351fe05b87ad712f7afc273c651450453f59d99af5deeacea" }
 
 [[targets.packages]]
-package = "snakecase"
-version = "0.11.1"
+package = "labeling"
+version = "0.4.3"
 binary = true
 platform = "x86_64-unknown-linux-gnu"
-dependencies = [
-    "stringi",
-    "stringr",
-]
-sources = ["https://p3m.dev/cran/2023-08-28/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/snakecase_0.11.1.tar.gz"]
-target = "bin/linux/manylinux_2_28-x86_64/4.6/snakecase_0.11.1-de62b102.tar.gz"
+dependencies = []
+sources = ["https://p3m.dev/cran/2023-08-30/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/labeling_0.4.3.tar.gz"]
+target = "bin/linux/manylinux_2_28-x86_64/4.6/labeling_0.4.3-578161a0.tar.gz"
 groups = ["main"]
-metadata = { RemoteHash = "2a5f9791337ca42e392f23fb873eb44f74810583e9aa7c62fda2f28f9e750821" }
+metadata = { RemoteHash = "c62f4fc2cc74377d7055903c5f1913b7295f7587456fe468592738a483e264f2" }
 
 [[targets.packages]]
 package = "pkgload"
@@ -3404,17 +3287,6 @@ sources = ["https://p3m.dev/cran/2026-06-16/bin/linux/manylinux_2_28-x86_64/4.6/
 target = "bin/linux/manylinux_2_28-x86_64/4.6/pkgload_1.5.3-83cb9fd0.tar.gz"
 groups = ["dev"]
 metadata = { RemoteHash = "5e539f91ca36b8ed80933101baf2a57462b9342c68556f5d4dcb86c01639df28" }
-
-[[targets.packages]]
-package = "labeling"
-version = "0.4.3"
-binary = true
-platform = "x86_64-unknown-linux-gnu"
-dependencies = []
-sources = ["https://p3m.dev/cran/2023-08-30/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/labeling_0.4.3.tar.gz"]
-target = "bin/linux/manylinux_2_28-x86_64/4.6/labeling_0.4.3-578161a0.tar.gz"
-groups = ["main"]
-metadata = { RemoteHash = "c62f4fc2cc74377d7055903c5f1913b7295f7587456fe468592738a483e264f2" }
 
 [[targets.packages]]
 package = "pillar"
@@ -3449,15 +3321,20 @@ groups = ["main"]
 metadata = { RemoteHash = "0bc5d10e5a34285d4f9e9c572c058c386b9e1515d8faebc1496b2680138280a8" }
 
 [[targets.packages]]
-package = "cpp11"
-version = "0.5.5"
+package = "vctrs"
+version = "0.7.3"
 binary = true
 platform = "x86_64-unknown-linux-gnu"
-dependencies = []
-sources = ["https://p3m.dev/cran/2026-05-07/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/cpp11_0.5.5.tar.gz"]
-target = "bin/linux/manylinux_2_28-x86_64/4.6/cpp11_0.5.5-73034f81.tar.gz"
+dependencies = [
+    "cli",
+    "glue",
+    "lifecycle",
+    "rlang",
+]
+sources = ["https://p3m.dev/cran/2026-04-12/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/vctrs_0.7.3.tar.gz"]
+target = "bin/linux/manylinux_2_28-x86_64/4.6/vctrs_0.7.3-fd6ec28d.tar.gz"
 groups = ["main"]
-metadata = { RemoteHash = "72486beb0605c1229bf3d422cd536224af8dc09bd389a3116f62f4c7705c62f4" }
+metadata = { RemoteHash = "b45078413e06ac624dddb7221a3a43908b405c8abec09822cb86638d30b0435b" }
 
 [[targets.packages]]
 package = "magrittr"
@@ -3474,20 +3351,15 @@ groups = [
 metadata = { RemoteHash = "3f5b5b1d4e6d12807a95c50b6c88cb1d8af2c5eb5213f08bfe58f278eca2ed23" }
 
 [[targets.packages]]
-package = "vctrs"
-version = "0.7.3"
+package = "cpp11"
+version = "0.5.5"
 binary = true
 platform = "x86_64-unknown-linux-gnu"
-dependencies = [
-    "cli",
-    "glue",
-    "lifecycle",
-    "rlang",
-]
-sources = ["https://p3m.dev/cran/2026-04-12/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/vctrs_0.7.3.tar.gz"]
-target = "bin/linux/manylinux_2_28-x86_64/4.6/vctrs_0.7.3-fd6ec28d.tar.gz"
+dependencies = []
+sources = ["https://p3m.dev/cran/2026-05-07/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/cpp11_0.5.5.tar.gz"]
+target = "bin/linux/manylinux_2_28-x86_64/4.6/cpp11_0.5.5-73034f81.tar.gz"
 groups = ["main"]
-metadata = { RemoteHash = "b45078413e06ac624dddb7221a3a43908b405c8abec09822cb86638d30b0435b" }
+metadata = { RemoteHash = "72486beb0605c1229bf3d422cd536224af8dc09bd389a3116f62f4c7705c62f4" }
 
 [[targets.packages]]
 package = "keyring"
@@ -3792,7 +3664,6 @@ dependencies = [
     "ggplot2",
     "glue",
     "here",
-    "janitor",
     "keyring",
     "purrr",
     "qs2",
@@ -3807,7 +3678,7 @@ sources = ["."]
 target = ""
 groups = ["main"]
 is_project = true
-metadata = { RemoteSha = "a173d0b90a4bb31dddbdd9baeca3111e7adaf483e4e4a516a01f2a6efac852d5", RemoteType = "local", RemoteUrl = "." }
+metadata = { RemoteSha = "79b1b734dbed82224facc7881a97bd078d9cd717adfa1ddb4dfee1303edc96fc", RemoteType = "local", RemoteUrl = "." }
 
 [[targets]]
 r_version = "4.6.1"
@@ -3844,10 +3715,6 @@ constraint = "*"
 
 [[targets.direct_dependencies]]
 name = "here"
-constraint = "*"
-
-[[targets.direct_dependencies]]
-name = "janitor"
 constraint = "*"
 
 [[targets.direct_dependencies]]
@@ -4293,30 +4160,6 @@ groups = ["main"]
 metadata = { RemoteHash = "7132834cf3c3388eff12bad376d69fbcf8275acc37d36c290e59174fe3c7f3eb" }
 
 [[targets.packages]]
-package = "janitor"
-version = "2.2.1"
-binary = true
-platform = "x86_64-w64-mingw32"
-dependencies = [
-    "hms",
-    "stringi",
-    "lifecycle",
-    "stringr",
-    "snakecase",
-    "tidyr",
-    "lubridate",
-    "purrr",
-    "dplyr",
-    "rlang",
-    "magrittr",
-    "tidyselect",
-]
-sources = ["https://p3m.dev/cran/2024-12-23/bin/windows/contrib/4.6/janitor_2.2.1.zip"]
-target = "bin/windows/4.6/janitor_2.2.1-1f2717b0.zip"
-groups = ["main"]
-metadata = { RemoteHash = "27c401302a62cafe8e68e66a51073834bc7930872282e0feb151d13629ae6cdf" }
-
-[[targets.packages]]
 package = "withr"
 version = "3.0.3"
 binary = true
@@ -4551,11 +4394,11 @@ metadata = { RemoteHash = "47aac79f889a828a5f8b4756cb972d7c2966bb984cbae17a4bd23
 [[targets.packages]]
 package = "S7"
 version = "0.2.2"
-binary = false
-platform = "source"
+binary = true
+platform = "x86_64-w64-mingw32"
 dependencies = []
-sources = ["https://p3m.dev/cran/2026-04-23/src/contrib/S7_0.2.2.tar.gz"]
-target = "src/S7_0.2.2-4c0c9d16.tar.gz"
+sources = ["https://p3m.dev/cran/2026-04-23/bin/windows/contrib/4.6/S7_0.2.2.zip"]
+target = "bin/windows/4.6/S7_0.2.2-4c0c9d16.zip"
 groups = ["main"]
 metadata = { RemoteHash = "6f33245dde05b74265b1c4d379e034bc3a8923d41e7b52e6e75a75ce97d42af7" }
 
@@ -4634,18 +4477,15 @@ groups = ["main"]
 metadata = { RemoteHash = "f059f27e2a5c82e351fe05b87ad712f7afc273c651450453f59d99af5deeacea" }
 
 [[targets.packages]]
-package = "snakecase"
-version = "0.11.1"
+package = "labeling"
+version = "0.4.3"
 binary = true
 platform = "x86_64-w64-mingw32"
-dependencies = [
-    "stringi",
-    "stringr",
-]
-sources = ["https://p3m.dev/cran/2023-08-28/bin/windows/contrib/4.6/snakecase_0.11.1.zip"]
-target = "bin/windows/4.6/snakecase_0.11.1-de62b102.zip"
+dependencies = []
+sources = ["https://p3m.dev/cran/2023-08-30/bin/windows/contrib/4.6/labeling_0.4.3.zip"]
+target = "bin/windows/4.6/labeling_0.4.3-578161a0.zip"
 groups = ["main"]
-metadata = { RemoteHash = "2a5f9791337ca42e392f23fb873eb44f74810583e9aa7c62fda2f28f9e750821" }
+metadata = { RemoteHash = "c62f4fc2cc74377d7055903c5f1913b7295f7587456fe468592738a483e264f2" }
 
 [[targets.packages]]
 package = "pkgload"
@@ -4667,17 +4507,6 @@ sources = ["https://p3m.dev/cran/2026-06-16/bin/windows/contrib/4.6/pkgload_1.5.
 target = "bin/windows/4.6/pkgload_1.5.3-83cb9fd0.zip"
 groups = ["dev"]
 metadata = { RemoteHash = "5e539f91ca36b8ed80933101baf2a57462b9342c68556f5d4dcb86c01639df28" }
-
-[[targets.packages]]
-package = "labeling"
-version = "0.4.3"
-binary = true
-platform = "x86_64-w64-mingw32"
-dependencies = []
-sources = ["https://p3m.dev/cran/2023-08-30/bin/windows/contrib/4.6/labeling_0.4.3.zip"]
-target = "bin/windows/4.6/labeling_0.4.3-578161a0.zip"
-groups = ["main"]
-metadata = { RemoteHash = "c62f4fc2cc74377d7055903c5f1913b7295f7587456fe468592738a483e264f2" }
 
 [[targets.packages]]
 package = "pillar"
@@ -4712,15 +4541,20 @@ groups = ["main"]
 metadata = { RemoteHash = "0bc5d10e5a34285d4f9e9c572c058c386b9e1515d8faebc1496b2680138280a8" }
 
 [[targets.packages]]
-package = "cpp11"
-version = "0.5.5"
+package = "vctrs"
+version = "0.7.3"
 binary = true
 platform = "x86_64-w64-mingw32"
-dependencies = []
-sources = ["https://p3m.dev/cran/2026-05-07/bin/windows/contrib/4.6/cpp11_0.5.5.zip"]
-target = "bin/windows/4.6/cpp11_0.5.5-73034f81.zip"
+dependencies = [
+    "cli",
+    "glue",
+    "lifecycle",
+    "rlang",
+]
+sources = ["https://p3m.dev/cran/2026-04-12/bin/windows/contrib/4.6/vctrs_0.7.3.zip"]
+target = "bin/windows/4.6/vctrs_0.7.3-fd6ec28d.zip"
 groups = ["main"]
-metadata = { RemoteHash = "72486beb0605c1229bf3d422cd536224af8dc09bd389a3116f62f4c7705c62f4" }
+metadata = { RemoteHash = "b45078413e06ac624dddb7221a3a43908b405c8abec09822cb86638d30b0435b" }
 
 [[targets.packages]]
 package = "magrittr"
@@ -4737,20 +4571,15 @@ groups = [
 metadata = { RemoteHash = "3f5b5b1d4e6d12807a95c50b6c88cb1d8af2c5eb5213f08bfe58f278eca2ed23" }
 
 [[targets.packages]]
-package = "vctrs"
-version = "0.7.3"
+package = "cpp11"
+version = "0.5.5"
 binary = true
 platform = "x86_64-w64-mingw32"
-dependencies = [
-    "cli",
-    "glue",
-    "lifecycle",
-    "rlang",
-]
-sources = ["https://p3m.dev/cran/2026-04-12/bin/windows/contrib/4.6/vctrs_0.7.3.zip"]
-target = "bin/windows/4.6/vctrs_0.7.3-fd6ec28d.zip"
+dependencies = []
+sources = ["https://p3m.dev/cran/2026-05-07/bin/windows/contrib/4.6/cpp11_0.5.5.zip"]
+target = "bin/windows/4.6/cpp11_0.5.5-73034f81.zip"
 groups = ["main"]
-metadata = { RemoteHash = "b45078413e06ac624dddb7221a3a43908b405c8abec09822cb86638d30b0435b" }
+metadata = { RemoteHash = "72486beb0605c1229bf3d422cd536224af8dc09bd389a3116f62f4c7705c62f4" }
 
 [[targets.packages]]
 package = "keyring"
@@ -5055,7 +4884,6 @@ dependencies = [
     "ggplot2",
     "glue",
     "here",
-    "janitor",
     "keyring",
     "purrr",
     "qs2",
@@ -5070,4 +4898,4 @@ sources = ["."]
 target = ""
 groups = ["main"]
 is_project = true
-metadata = { RemoteSha = "a173d0b90a4bb31dddbdd9baeca3111e7adaf483e4e4a516a01f2a6efac852d5", RemoteType = "local", RemoteUrl = "." }
+metadata = { RemoteSha = "79b1b734dbed82224facc7881a97bd078d9cd717adfa1ddb4dfee1303edc96fc", RemoteType = "local", RemoteUrl = "." }

@@ -32,8 +32,7 @@ load_survey <- function(
   survey_file <- here::here(file)
 
   if (!is.null(file) && fs::file_exists(survey_file)) {
-    survey <- qs2::qs_read(survey_file) |>
-      janitor::clean_names()
+    survey <- qs2::qs_read(survey_file)
     return(survey)
   }
 
@@ -57,8 +56,7 @@ load_survey <- function(
     qs2::qs_save(survey, survey_file)
   }
 
-  survey |>
-    janitor::clean_names()
+  survey
 }
 
 get_api_key <- function(api_keyring_id = NULL) {
