@@ -1,14 +1,15 @@
 #' Load Qualtrics survey data
 #'
 #' @description
-#' Load data frame of Qualtrics survey data. If no local copy exists, also
-#' downloads survey from Qualtrics and saves a local copy.
+#' Load a Qualtrics survey either by downloading and optionally saving to a
+#' local copy or by loading from such a copy.
 #'
 #' @param base_url A character scalar. Your institution-specific base URL for
 #'   your Qualtrics account without `https://`. Find your base URL at
 #'   [Base URL and Datacenter IDs | Qualtrics API Docs](https://api.qualtrics.com/1aea264443797-base-url-and-datacenter-i-ds).
 #' @param survey_name A character scalar. The survey name on Qualtrics.
-#' @param file A character scalar. File to write to or load from.
+#' @param file A character scalar. File to write to or load the data from. If
+#'   `NULL` (the default), the survey is downloaded without being saved.
 #' @param api_keyring_id A character scalar. Name of your Qualtrics API token as
 #'   saved in your operating system's credential store and accessed with
 #'   [keyring]. See
@@ -21,12 +22,12 @@
 load_survey <- function(
   base_url,
   survey_name,
-  file,
+  file = NULL,
   api_keyring_id = "qualtrics_api_key"
 ) {
   survey_file <- here::here(file)
 
-  if (fs::file_exists(survey_file)) {
+  if (!is.null(file) & fs::file_exists(survey_file)) {
     survey <- qs2::qs_read(survey_file) |>
       janitor::clean_names()
     return(survey)
@@ -69,7 +70,11 @@ load_survey <- function(
     survey_id,
     breakout_sets = FALSE
   )
-  qs2::qs_save(survey, survey_file)
+
+  if (!is.null(file)) {
+    qs2::qs_save(survey, survey_file)
+  }
+
   survey |>
     janitor::clean_names()
 }

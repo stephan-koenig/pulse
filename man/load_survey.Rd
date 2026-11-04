@@ -4,7 +4,12 @@
 \alias{load_survey}
 \title{Load Qualtrics survey data}
 \usage{
-load_survey(base_url, survey_name, file, api_keyring_id = "qualtrics_api_key")
+load_survey(
+  base_url,
+  survey_name,
+  file = NULL,
+  api_keyring_id = "qualtrics_api_key"
+)
 }
 \arguments{
 \item{base_url}{A character scalar. Your institution-specific base URL for
@@ -13,7 +18,8 @@ your Qualtrics account without \verb{https://}. Find your base URL at
 
 \item{survey_name}{A character scalar. The survey name on Qualtrics.}
 
-\item{file}{A character scalar. File to write to or load from.}
+\item{file}{A character scalar. File to write to or load the data from. If
+\code{NULL} (the default), the survey is downloaded without being saved.}
 
 \item{api_keyring_id}{A character scalar. Name of your Qualtrics API token as
 saved in your operating system's credential store and accessed with
@@ -25,6 +31,6 @@ for more information. Default is \code{"qualtrics_api_key"}.}
 A data frame.
 }
 \description{
-Load data frame of Qualtrics survey data. If no local copy exists, also
-downloads survey from Qualtrics and saves a local copy.
+Load a Qualtrics survey either by downloading and optionally saving to a
+local copy or by loading from such a copy.
 }
