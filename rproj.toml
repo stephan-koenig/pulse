@@ -38,6 +38,7 @@ stringr = "*"
 tibble = "*"
 tidyr = "*"
 askpass = "*"
+labelled = "*"
 
 [dependency-groups.dev]
 testthat = ">= 3.0.0"

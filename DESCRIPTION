@@ -20,6 +20,7 @@ Imports:
     glue,
     here,
     keyring,
+    labelled,
     purrr,
     qs2,
     qualtRics,

@@ -50,6 +50,10 @@ name = "keyring"
 constraint = "*"
 
 [[targets.direct_dependencies]]
+name = "labelled"
+constraint = "*"
+
+[[targets.direct_dependencies]]
 name = "purrr"
 constraint = "*"
 
@@ -98,14 +102,14 @@ metadata = { RemoteHash = "5c035e74fd05dfa59b03afe0d5f4c53fbf34144e175e90c53d09c
 
 [[targets.packages]]
 package = "openssl"
-version = "2.4.2"
+version = "2.5.0"
 binary = true
 platform = "aarch64-apple-darwin"
 dependencies = ["askpass"]
-sources = ["https://p3m.dev/cran/2026-06-10/bin/macosx/sonoma-arm64/contrib/4.6/openssl_2.4.2.tgz"]
-target = "bin/macosx/sonoma-arm64/4.6/openssl_2.4.2-53152ce1.tgz"
+sources = ["https://p3m.dev/cran/2026-11-03/bin/macosx/sonoma-arm64/contrib/4.6/openssl_2.5.0.tgz"]
+target = "bin/macosx/sonoma-arm64/4.6/openssl_2.5.0-89e44ad8.tgz"
 groups = ["main"]
-metadata = { RemoteHash = "1fc030ad0a008472eac7f086666a7623bdbe6d27c5fdb07b5510f56545d2f4e7" }
+metadata = { RemoteHash = "4b3adad396c62f8cec664368c713f393a9e5345f9fe7353809b8b80027392ffb" }
 
 [[targets.packages]]
 package = "stringi"
@@ -344,20 +348,6 @@ groups = ["dev"]
 metadata = { RemoteHash = "54468da73dd78fc9e7c565c41cfe3331802c2134b2e61a9ad197215317092f26" }
 
 [[targets.packages]]
-package = "stringfish"
-version = "0.19.2"
-binary = true
-platform = "aarch64-apple-darwin"
-dependencies = [
-    "Rcpp",
-    "RcppParallel",
-]
-sources = ["https://p3m.dev/cran/2026-08-28/bin/macosx/sonoma-arm64/contrib/4.6/stringfish_0.19.2.tgz"]
-target = "bin/macosx/sonoma-arm64/4.6/stringfish_0.19.2-d59340a7.tgz"
-groups = ["main"]
-metadata = { RemoteHash = "424e9b2c69f5b7af74753e401cfaf9e9be08729dda99bdf0946ea53849e9aad0", RemoteLinkingToHashes = "Rcpp@1.1.2=2746cf2fb188e5f0a84dbf5c8f68915b54564ed33e5754572f174e7b32e7f4f3, RcppParallel@6.2.1=6d076439020f64f502552ae924e93f62b6fefd2bb5c193987751dc7a48826ebc" }
-
-[[targets.packages]]
 package = "waldo"
 version = "0.6.2"
 binary = true
@@ -383,6 +373,17 @@ sources = ["https://p3m.dev/cran/2026-04-21/bin/macosx/sonoma-arm64/contrib/4.6/
 target = "bin/macosx/sonoma-arm64/4.6/ps_1.9.3-be551c7f.tgz"
 groups = ["dev"]
 metadata = { RemoteHash = "7b227f0627709a2073daf960ac612a0b87d03e18f7dd5c1938048ed440ef2e68" }
+
+[[targets.packages]]
+package = "curl"
+version = "8.1.0"
+binary = true
+platform = "aarch64-apple-darwin"
+dependencies = []
+sources = ["https://p3m.dev/cran/2026-10-15/bin/macosx/sonoma-arm64/contrib/4.6/curl_8.1.0.tgz"]
+target = "bin/macosx/sonoma-arm64/4.6/curl_8.1.0-edf1176c.tgz"
+groups = ["main"]
+metadata = { RemoteHash = "ab3907ac4f063d614c778b8540d7e2e7b108dc6ab82c42e471cff2a1ca21205b" }
 
 [[targets.packages]]
 package = "processx"
@@ -438,17 +439,6 @@ groups = ["main"]
 metadata = { RemoteHash = "4adf8cea7a24012ec883da1723eaade26c69455e0a3200bdc12f2f9f8515982c" }
 
 [[targets.packages]]
-package = "curl"
-version = "8.1.0"
-binary = true
-platform = "aarch64-apple-darwin"
-dependencies = []
-sources = ["https://p3m.dev/cran/2026-10-15/bin/macosx/sonoma-arm64/contrib/4.6/curl_8.1.0.tgz"]
-target = "bin/macosx/sonoma-arm64/4.6/curl_8.1.0-edf1176c.tgz"
-groups = ["main"]
-metadata = { RemoteHash = "ab3907ac4f063d614c778b8540d7e2e7b108dc6ab82c42e471cff2a1ca21205b" }
-
-[[targets.packages]]
 package = "yaml"
 version = "2.3.12"
 binary = true
@@ -486,6 +476,17 @@ sources = ["https://p3m.dev/cran/2025-03-18/bin/macosx/sonoma-arm64/contrib/4.6/
 target = "bin/macosx/sonoma-arm64/4.6/mime_0.13-1d43468f.tgz"
 groups = ["main"]
 metadata = { RemoteHash = "7132834cf3c3388eff12bad376d69fbcf8275acc37d36c290e59174fe3c7f3eb" }
+
+[[targets.packages]]
+package = "charport"
+version = "0.1.1"
+binary = true
+platform = "aarch64-apple-darwin"
+dependencies = []
+sources = ["https://p3m.dev/cran/2026-09-22/bin/macosx/sonoma-arm64/contrib/4.6/charport_0.1.1.tgz"]
+target = "bin/macosx/sonoma-arm64/4.6/charport_0.1.1-46fde092.tgz"
+groups = ["main"]
+metadata = { RemoteHash = "9c48dd2aff4c977cd64bdda5dca746f550de679e0c25b33563636a07c90a2818" }
 
 [[targets.packages]]
 package = "withr"
@@ -575,29 +576,29 @@ metadata = { RemoteHash = "3e74a0685541efb5ea763b92cfd5c859df71c46b0605967a0b5db
 
 [[targets.packages]]
 package = "qs2"
-version = "0.3.1"
+version = "0.4.0"
 binary = true
 platform = "aarch64-apple-darwin"
 dependencies = [
-    "stringfish",
     "Rcpp",
+    "charport",
     "RcppParallel",
 ]
-sources = ["https://p3m.dev/cran/2026-08-28/bin/macosx/sonoma-arm64/contrib/4.6/qs2_0.3.1.tgz"]
-target = "bin/macosx/sonoma-arm64/4.6/qs2_0.3.1-994ce001.tgz"
+sources = ["https://p3m.dev/cran/2026-11-03/bin/macosx/sonoma-arm64/contrib/4.6/qs2_0.4.0.tgz"]
+target = "bin/macosx/sonoma-arm64/4.6/qs2_0.4.0-d84a8cb5.tgz"
 groups = ["main"]
-metadata = { RemoteHash = "1d555e5c38cf352209aeefb0355aa95bc04cda4af229a2a32c26d5582723b942", RemoteLinkingToHashes = "Rcpp@1.1.2=2746cf2fb188e5f0a84dbf5c8f68915b54564ed33e5754572f174e7b32e7f4f3, RcppParallel@6.2.1=6d076439020f64f502552ae924e93f62b6fefd2bb5c193987751dc7a48826ebc" }
+metadata = { RemoteHash = "9ab39bcaca5bfc2b56420ca155d48a05a06a273fbcf77290b65799d8e8dee351", RemoteLinkingToHashes = "Rcpp@1.1.2=2746cf2fb188e5f0a84dbf5c8f68915b54564ed33e5754572f174e7b32e7f4f3, RcppParallel@6.2.1=6d076439020f64f502552ae924e93f62b6fefd2bb5c193987751dc7a48826ebc, charport@0.1.1=9c48dd2aff4c977cd64bdda5dca746f550de679e0c25b33563636a07c90a2818" }
 
 [[targets.packages]]
 package = "datawizard"
-version = "1.4.0"
+version = "1.4.1"
 binary = true
 platform = "aarch64-apple-darwin"
 dependencies = ["insight"]
-sources = ["https://p3m.dev/cran/2026-09-11/bin/macosx/sonoma-arm64/contrib/4.6/datawizard_1.4.0.tgz"]
-target = "bin/macosx/sonoma-arm64/4.6/datawizard_1.4.0-1de8b3ec.tgz"
+sources = ["https://p3m.dev/cran/2026-10-19/bin/macosx/sonoma-arm64/contrib/4.6/datawizard_1.4.1.tgz"]
+target = "bin/macosx/sonoma-arm64/4.6/datawizard_1.4.1-265e1e28.tgz"
 groups = ["main"]
-metadata = { RemoteHash = "6767455980dcf015afec88b21ce546552401264b17cc61f971182521f5f3b479" }
+metadata = { RemoteHash = "1e92b555a5e03ef1b4eeeecf830f790d86d4891091b79ca92d61ad24743406ab" }
 
 [[targets.packages]]
 package = "here"
@@ -609,6 +610,28 @@ sources = ["https://p3m.dev/cran/2025-09-16/bin/macosx/sonoma-arm64/contrib/4.6/
 target = "bin/macosx/sonoma-arm64/4.6/here_1.0.2-5bf49ea0.tgz"
 groups = ["main"]
 metadata = { RemoteHash = "71980aa294314d6e032e680dfd2a59f792cab6f8d414cce03f2e823819190c3d" }
+
+[[targets.packages]]
+package = "haven"
+version = "2.5.5"
+binary = true
+platform = "aarch64-apple-darwin"
+dependencies = [
+    "vctrs",
+    "hms",
+    "tibble",
+    "cpp11",
+    "forcats",
+    "lifecycle",
+    "readr",
+    "cli",
+    "rlang",
+    "tidyselect",
+]
+sources = ["https://p3m.dev/cran/2026-05-07/bin/macosx/sonoma-arm64/contrib/4.6/haven_2.5.5.tgz"]
+target = "bin/macosx/sonoma-arm64/4.6/haven_2.5.5-7e921b2f.tgz"
+groups = ["main"]
+metadata = { RemoteHash = "9482cd9c3760e1838acf687235317fed97fa6bf79219d3216f0ea447d4b1c9a5", RemoteLinkingToHashes = "cpp11@0.5.5=72486beb0605c1229bf3d422cd536224af8dc09bd389a3116f62f4c7705c62f4" }
 
 [[targets.packages]]
 package = "stringr"
@@ -720,15 +743,25 @@ groups = ["dev"]
 metadata = { RemoteHash = "47aac79f889a828a5f8b4756cb972d7c2966bb984cbae17a4bd2389a73270794" }
 
 [[targets.packages]]
-package = "S7"
-version = "0.2.2"
+package = "labelled"
+version = "2.16.1"
 binary = true
 platform = "aarch64-apple-darwin"
-dependencies = []
-sources = ["https://p3m.dev/cran/2026-04-23/bin/macosx/sonoma-arm64/contrib/4.6/S7_0.2.2.tgz"]
-target = "bin/macosx/sonoma-arm64/4.6/S7_0.2.2-4c0c9d16.tgz"
+dependencies = [
+    "haven",
+    "lifecycle",
+    "stringr",
+    "tidyr",
+    "cli",
+    "dplyr",
+    "rlang",
+    "vctrs",
+    "tidyselect",
+]
+sources = ["https://p3m.dev/cran/2026-08-21/bin/macosx/sonoma-arm64/contrib/4.6/labelled_2.16.1.tgz"]
+target = "bin/macosx/sonoma-arm64/4.6/labelled_2.16.1-cb55aee2.tgz"
 groups = ["main"]
-metadata = { RemoteHash = "6f33245dde05b74265b1c4d379e034bc3a8923d41e7b52e6e75a75ce97d42af7" }
+metadata = { RemoteHash = "1263eef0f65ee0ee32d92085c7c7cdfb81f696fce54aaa7598f606ea172cb00a" }
 
 [[targets.packages]]
 package = "glue"
@@ -743,6 +776,17 @@ groups = [
     "main",
 ]
 metadata = { RemoteHash = "1c55905d3efc3d5c199ceb0bd12218e97f0d4c64df6038ff41ecef415478a122" }
+
+[[targets.packages]]
+package = "S7"
+version = "0.2.2"
+binary = true
+platform = "aarch64-apple-darwin"
+dependencies = []
+sources = ["https://p3m.dev/cran/2026-04-23/bin/macosx/sonoma-arm64/contrib/4.6/S7_0.2.2.tgz"]
+target = "bin/macosx/sonoma-arm64/4.6/S7_0.2.2-4c0c9d16.tgz"
+groups = ["main"]
+metadata = { RemoteHash = "6f33245dde05b74265b1c4d379e034bc3a8923d41e7b52e6e75a75ce97d42af7" }
 
 [[targets.packages]]
 package = "RcppParallel"
@@ -805,15 +849,22 @@ groups = ["main"]
 metadata = { RemoteHash = "f059f27e2a5c82e351fe05b87ad712f7afc273c651450453f59d99af5deeacea" }
 
 [[targets.packages]]
-package = "labeling"
-version = "0.4.3"
+package = "forcats"
+version = "1.0.1"
 binary = true
 platform = "aarch64-apple-darwin"
-dependencies = []
-sources = ["https://p3m.dev/cran/2023-08-30/bin/macosx/sonoma-arm64/contrib/4.6/labeling_0.4.3.tgz"]
-target = "bin/macosx/sonoma-arm64/4.6/labeling_0.4.3-578161a0.tgz"
+dependencies = [
+    "tibble",
+    "cli",
+    "glue",
+    "lifecycle",
+    "magrittr",
+    "rlang",
+]
+sources = ["https://p3m.dev/cran/2025-09-26/bin/macosx/sonoma-arm64/contrib/4.6/forcats_1.0.1.tgz"]
+target = "bin/macosx/sonoma-arm64/4.6/forcats_1.0.1-6eae3f2f.tgz"
 groups = ["main"]
-metadata = { RemoteHash = "c62f4fc2cc74377d7055903c5f1913b7295f7587456fe468592738a483e264f2" }
+metadata = { RemoteHash = "1de46b83b7038a293e612775197b7ffe47bd079cd2385aa7c65e98171bbd3605" }
 
 [[targets.packages]]
 package = "pkgload"
@@ -835,6 +886,17 @@ sources = ["https://p3m.dev/cran/2026-06-16/bin/macosx/sonoma-arm64/contrib/4.6/
 target = "bin/macosx/sonoma-arm64/4.6/pkgload_1.5.3-83cb9fd0.tgz"
 groups = ["dev"]
 metadata = { RemoteHash = "5e539f91ca36b8ed80933101baf2a57462b9342c68556f5d4dcb86c01639df28" }
+
+[[targets.packages]]
+package = "labeling"
+version = "0.4.3"
+binary = true
+platform = "aarch64-apple-darwin"
+dependencies = []
+sources = ["https://p3m.dev/cran/2023-08-30/bin/macosx/sonoma-arm64/contrib/4.6/labeling_0.4.3.tgz"]
+target = "bin/macosx/sonoma-arm64/4.6/labeling_0.4.3-578161a0.tgz"
+groups = ["main"]
+metadata = { RemoteHash = "c62f4fc2cc74377d7055903c5f1913b7295f7587456fe468592738a483e264f2" }
 
 [[targets.packages]]
 package = "pillar"
@@ -1189,14 +1251,14 @@ metadata = { RemoteHash = "a5fcec17ba772a561a7375ca8fd966bdd5f20dd4e89b4dae07d7d
 
 [[targets.packages]]
 package = "insight"
-version = "1.6.0"
+version = "1.7.0"
 binary = true
 platform = "aarch64-apple-darwin"
 dependencies = []
-sources = ["https://p3m.dev/cran/2026-10-14/bin/macosx/sonoma-arm64/contrib/4.6/insight_1.6.0.tgz"]
-target = "bin/macosx/sonoma-arm64/4.6/insight_1.6.0-9841243a.tgz"
+sources = ["https://p3m.dev/cran/2026-10-31/bin/macosx/sonoma-arm64/contrib/4.6/insight_1.7.0.tgz"]
+target = "bin/macosx/sonoma-arm64/4.6/insight_1.7.0-a441919b.tgz"
 groups = ["main"]
-metadata = { RemoteHash = "ad76d25ca553499ad1e2499d045da5bb3850099496bec764a90ef63f8d519eee" }
+metadata = { RemoteHash = "eaeb3c9d23d9478e0902c3d7c30f57a20a2d346d89ad4d7427a274ad4fbe38db" }
 
 [[targets.packages]]
 package = "pulse"
@@ -1213,6 +1275,7 @@ dependencies = [
     "glue",
     "here",
     "keyring",
+    "labelled",
     "purrr",
     "qs2",
     "qualtRics",
@@ -1226,7 +1289,7 @@ sources = ["."]
 target = ""
 groups = ["main"]
 is_project = true
-metadata = { RemoteSha = "79b1b734dbed82224facc7881a97bd078d9cd717adfa1ddb4dfee1303edc96fc", RemoteType = "local", RemoteUrl = "." }
+metadata = { RemoteSha = "867629291e8e3f12a20fa7b9f901899a1c5973acd05aa6cfee30af2e4769a620", RemoteType = "local", RemoteUrl = "." }
 
 [[targets]]
 r_version = "4.6.1"
@@ -1267,6 +1330,10 @@ constraint = "*"
 
 [[targets.direct_dependencies]]
 name = "keyring"
+constraint = "*"
+
+[[targets.direct_dependencies]]
+name = "labelled"
 constraint = "*"
 
 [[targets.direct_dependencies]]
@@ -1318,15 +1385,15 @@ metadata = { RemoteHash = "5c035e74fd05dfa59b03afe0d5f4c53fbf34144e175e90c53d09c
 
 [[targets.packages]]
 package = "openssl"
-version = "2.4.2"
+version = "2.5.0"
 binary = false
 platform = "source"
 dependencies = ["askpass"]
-sources = ["https://p3m.dev/cran/2026-06-10/src/contrib/openssl_2.4.2.tar.gz"]
-target = "src/openssl_2.4.2-53152ce1.tar.gz"
+sources = ["https://p3m.dev/cran/2026-11-03/src/contrib/openssl_2.5.0.tar.gz"]
+target = "src/openssl_2.5.0-89e44ad8.tar.gz"
 groups = ["main"]
 system_requirements = "OpenSSL >= 1.0.2"
-metadata = { RemoteHash = "1fc030ad0a008472eac7f086666a7623bdbe6d27c5fdb07b5510f56545d2f4e7" }
+metadata = { RemoteHash = "4b3adad396c62f8cec664368c713f393a9e5345f9fe7353809b8b80027392ffb" }
 
 [[targets.packages]]
 package = "stringi"
@@ -1566,21 +1633,6 @@ groups = ["dev"]
 metadata = { RemoteHash = "54468da73dd78fc9e7c565c41cfe3331802c2134b2e61a9ad197215317092f26" }
 
 [[targets.packages]]
-package = "stringfish"
-version = "0.19.2"
-binary = false
-platform = "source"
-dependencies = [
-    "Rcpp",
-    "RcppParallel",
-]
-sources = ["https://p3m.dev/cran/2026-08-05/src/contrib/stringfish_0.19.2.tar.gz"]
-target = "src/stringfish_0.19.2-cb6d743b.tar.gz"
-groups = ["main"]
-system_requirements = "GNU make, C++17"
-metadata = { RemoteHash = "424e9b2c69f5b7af74753e401cfaf9e9be08729dda99bdf0946ea53849e9aad0", RemoteLinkingToHashes = "Rcpp@1.1.2=2746cf2fb188e5f0a84dbf5c8f68915b54564ed33e5754572f174e7b32e7f4f3, RcppParallel@6.2.1=6d076439020f64f502552ae924e93f62b6fefd2bb5c193987751dc7a48826ebc" }
-
-[[targets.packages]]
 package = "waldo"
 version = "0.6.2"
 binary = false
@@ -1608,6 +1660,18 @@ groups = ["dev"]
 metadata = { RemoteHash = "7b227f0627709a2073daf960ac612a0b87d03e18f7dd5c1938048ed440ef2e68" }
 
 [[targets.packages]]
+package = "curl"
+version = "8.1.0"
+binary = false
+platform = "source"
+dependencies = []
+sources = ["https://p3m.dev/cran/2026-10-15/src/contrib/curl_8.1.0.tar.gz"]
+target = "src/curl_8.1.0-edf1176c.tar.gz"
+groups = ["main"]
+system_requirements = "libcurl (>= 7.73): libcurl-devel (rpm) or libcurl4-openssl-dev (deb)"
+metadata = { RemoteHash = "ab3907ac4f063d614c778b8540d7e2e7b108dc6ab82c42e471cff2a1ca21205b" }
+
+[[targets.packages]]
 package = "processx"
 version = "3.9.0"
 binary = false
@@ -1622,16 +1686,15 @@ groups = ["dev"]
 metadata = { RemoteHash = "cdfef9035405891d8b104b258a40f62656f215aba7dcdc9f3226203c4c8fb354" }
 
 [[targets.packages]]
-package = "curl"
-version = "8.1.0"
+package = "yaml"
+version = "2.3.12"
 binary = false
 platform = "source"
 dependencies = []
-sources = ["https://p3m.dev/cran/2026-10-15/src/contrib/curl_8.1.0.tar.gz"]
-target = "src/curl_8.1.0-edf1176c.tar.gz"
+sources = ["https://p3m.dev/cran/2025-12-10/src/contrib/yaml_2.3.12.tar.gz"]
+target = "src/yaml_2.3.12-2b15f7a9.tar.gz"
 groups = ["main"]
-system_requirements = "libcurl (>= 7.73): libcurl-devel (rpm) or libcurl4-openssl-dev (deb)"
-metadata = { RemoteHash = "ab3907ac4f063d614c778b8540d7e2e7b108dc6ab82c42e471cff2a1ca21205b" }
+metadata = { RemoteHash = "80ccf3dde851133ef3e333b818a817c296c6ccdacfc4709cd466995289cd556c" }
 
 [[targets.packages]]
 package = "generics"
@@ -1673,17 +1736,6 @@ groups = ["main"]
 metadata = { RemoteHash = "2746cf2fb188e5f0a84dbf5c8f68915b54564ed33e5754572f174e7b32e7f4f3" }
 
 [[targets.packages]]
-package = "yaml"
-version = "2.3.12"
-binary = false
-platform = "source"
-dependencies = []
-sources = ["https://p3m.dev/cran/2025-12-10/src/contrib/yaml_2.3.12.tar.gz"]
-target = "src/yaml_2.3.12-2b15f7a9.tar.gz"
-groups = ["main"]
-metadata = { RemoteHash = "80ccf3dde851133ef3e333b818a817c296c6ccdacfc4709cd466995289cd556c" }
-
-[[targets.packages]]
 package = "hms"
 version = "1.1.4"
 binary = false
@@ -1710,6 +1762,17 @@ sources = ["https://p3m.dev/cran/2025-03-18/src/contrib/mime_0.13.tar.gz"]
 target = "src/mime_0.13-1d43468f.tar.gz"
 groups = ["main"]
 metadata = { RemoteHash = "7132834cf3c3388eff12bad376d69fbcf8275acc37d36c290e59174fe3c7f3eb" }
+
+[[targets.packages]]
+package = "charport"
+version = "0.1.1"
+binary = false
+platform = "source"
+dependencies = []
+sources = ["https://p3m.dev/cran/2026-09-22/src/contrib/charport_0.1.1.tar.gz"]
+target = "src/charport_0.1.1-46fde092.tar.gz"
+groups = ["main"]
+metadata = { RemoteHash = "9c48dd2aff4c977cd64bdda5dca746f550de679e0c25b33563636a07c90a2818" }
 
 [[targets.packages]]
 package = "withr"
@@ -1799,30 +1862,30 @@ metadata = { RemoteHash = "3e74a0685541efb5ea763b92cfd5c859df71c46b0605967a0b5db
 
 [[targets.packages]]
 package = "qs2"
-version = "0.3.1"
+version = "0.4.0"
 binary = false
 platform = "source"
 dependencies = [
-    "stringfish",
     "Rcpp",
+    "charport",
     "RcppParallel",
 ]
-sources = ["https://p3m.dev/cran/2026-08-22/src/contrib/qs2_0.3.1.tar.gz"]
-target = "src/qs2_0.3.1-ab890f22.tar.gz"
+sources = ["https://p3m.dev/cran/2026-11-03/src/contrib/qs2_0.4.0.tar.gz"]
+target = "src/qs2_0.4.0-76eceb81.tar.gz"
 groups = ["main"]
 system_requirements = "GNU make, C++17"
-metadata = { RemoteHash = "1d555e5c38cf352209aeefb0355aa95bc04cda4af229a2a32c26d5582723b942", RemoteLinkingToHashes = "Rcpp@1.1.2=2746cf2fb188e5f0a84dbf5c8f68915b54564ed33e5754572f174e7b32e7f4f3, RcppParallel@6.2.1=6d076439020f64f502552ae924e93f62b6fefd2bb5c193987751dc7a48826ebc" }
+metadata = { RemoteHash = "9ab39bcaca5bfc2b56420ca155d48a05a06a273fbcf77290b65799d8e8dee351", RemoteLinkingToHashes = "Rcpp@1.1.2=2746cf2fb188e5f0a84dbf5c8f68915b54564ed33e5754572f174e7b32e7f4f3, RcppParallel@6.2.1=6d076439020f64f502552ae924e93f62b6fefd2bb5c193987751dc7a48826ebc, charport@0.1.1=9c48dd2aff4c977cd64bdda5dca746f550de679e0c25b33563636a07c90a2818" }
 
 [[targets.packages]]
 package = "datawizard"
-version = "1.4.0"
+version = "1.4.1"
 binary = false
 platform = "source"
 dependencies = ["insight"]
-sources = ["https://p3m.dev/cran/2026-09-11/src/contrib/datawizard_1.4.0.tar.gz"]
-target = "src/datawizard_1.4.0-1de8b3ec.tar.gz"
+sources = ["https://p3m.dev/cran/2026-10-19/src/contrib/datawizard_1.4.1.tar.gz"]
+target = "src/datawizard_1.4.1-265e1e28.tar.gz"
 groups = ["main"]
-metadata = { RemoteHash = "6767455980dcf015afec88b21ce546552401264b17cc61f971182521f5f3b479" }
+metadata = { RemoteHash = "1e92b555a5e03ef1b4eeeecf830f790d86d4891091b79ca92d61ad24743406ab" }
 
 [[targets.packages]]
 package = "here"
@@ -1834,6 +1897,29 @@ sources = ["https://p3m.dev/cran/2025-09-16/src/contrib/here_1.0.2.tar.gz"]
 target = "src/here_1.0.2-5bf49ea0.tar.gz"
 groups = ["main"]
 metadata = { RemoteHash = "71980aa294314d6e032e680dfd2a59f792cab6f8d414cce03f2e823819190c3d" }
+
+[[targets.packages]]
+package = "haven"
+version = "2.5.5"
+binary = false
+platform = "source"
+dependencies = [
+    "vctrs",
+    "hms",
+    "tibble",
+    "cpp11",
+    "forcats",
+    "lifecycle",
+    "readr",
+    "cli",
+    "rlang",
+    "tidyselect",
+]
+sources = ["https://p3m.dev/cran/2025-05-31/src/contrib/haven_2.5.5.tar.gz"]
+target = "src/haven_2.5.5-6decd702.tar.gz"
+groups = ["main"]
+system_requirements = "GNU make, zlib: zlib1g-dev (deb), zlib-devel (rpm)"
+metadata = { RemoteHash = "9482cd9c3760e1838acf687235317fed97fa6bf79219d3216f0ea447d4b1c9a5", RemoteLinkingToHashes = "cpp11@0.5.5=72486beb0605c1229bf3d422cd536224af8dc09bd389a3116f62f4c7705c62f4" }
 
 [[targets.packages]]
 package = "stringr"
@@ -1945,15 +2031,25 @@ groups = ["dev"]
 metadata = { RemoteHash = "47aac79f889a828a5f8b4756cb972d7c2966bb984cbae17a4bd2389a73270794" }
 
 [[targets.packages]]
-package = "S7"
-version = "0.2.2"
+package = "labelled"
+version = "2.16.1"
 binary = false
 platform = "source"
-dependencies = []
-sources = ["https://p3m.dev/cran/2026-04-23/src/contrib/S7_0.2.2.tar.gz"]
-target = "src/S7_0.2.2-4c0c9d16.tar.gz"
+dependencies = [
+    "haven",
+    "lifecycle",
+    "stringr",
+    "tidyr",
+    "cli",
+    "dplyr",
+    "rlang",
+    "vctrs",
+    "tidyselect",
+]
+sources = ["https://p3m.dev/cran/2026-08-21/src/contrib/labelled_2.16.1.tar.gz"]
+target = "src/labelled_2.16.1-cb55aee2.tar.gz"
 groups = ["main"]
-metadata = { RemoteHash = "6f33245dde05b74265b1c4d379e034bc3a8923d41e7b52e6e75a75ce97d42af7" }
+metadata = { RemoteHash = "1263eef0f65ee0ee32d92085c7c7cdfb81f696fce54aaa7598f606ea172cb00a" }
 
 [[targets.packages]]
 package = "glue"
@@ -1968,6 +2064,17 @@ groups = [
     "main",
 ]
 metadata = { RemoteHash = "1c55905d3efc3d5c199ceb0bd12218e97f0d4c64df6038ff41ecef415478a122" }
+
+[[targets.packages]]
+package = "S7"
+version = "0.2.2"
+binary = false
+platform = "source"
+dependencies = []
+sources = ["https://p3m.dev/cran/2026-04-23/src/contrib/S7_0.2.2.tar.gz"]
+target = "src/S7_0.2.2-4c0c9d16.tar.gz"
+groups = ["main"]
+metadata = { RemoteHash = "6f33245dde05b74265b1c4d379e034bc3a8923d41e7b52e6e75a75ce97d42af7" }
 
 [[targets.packages]]
 package = "RcppParallel"
@@ -2032,15 +2139,22 @@ groups = ["main"]
 metadata = { RemoteHash = "f059f27e2a5c82e351fe05b87ad712f7afc273c651450453f59d99af5deeacea" }
 
 [[targets.packages]]
-package = "labeling"
-version = "0.4.3"
+package = "forcats"
+version = "1.0.1"
 binary = false
 platform = "source"
-dependencies = []
-sources = ["https://p3m.dev/cran/2023-08-30/src/contrib/labeling_0.4.3.tar.gz"]
-target = "src/labeling_0.4.3-578161a0.tar.gz"
+dependencies = [
+    "tibble",
+    "cli",
+    "glue",
+    "lifecycle",
+    "magrittr",
+    "rlang",
+]
+sources = ["https://p3m.dev/cran/2025-09-26/src/contrib/forcats_1.0.1.tar.gz"]
+target = "src/forcats_1.0.1-6eae3f2f.tar.gz"
 groups = ["main"]
-metadata = { RemoteHash = "c62f4fc2cc74377d7055903c5f1913b7295f7587456fe468592738a483e264f2" }
+metadata = { RemoteHash = "1de46b83b7038a293e612775197b7ffe47bd079cd2385aa7c65e98171bbd3605" }
 
 [[targets.packages]]
 package = "pkgload"
@@ -2062,6 +2176,17 @@ sources = ["https://p3m.dev/cran/2026-06-16/src/contrib/pkgload_1.5.3.tar.gz"]
 target = "src/pkgload_1.5.3-83cb9fd0.tar.gz"
 groups = ["dev"]
 metadata = { RemoteHash = "5e539f91ca36b8ed80933101baf2a57462b9342c68556f5d4dcb86c01639df28" }
+
+[[targets.packages]]
+package = "labeling"
+version = "0.4.3"
+binary = false
+platform = "source"
+dependencies = []
+sources = ["https://p3m.dev/cran/2023-08-30/src/contrib/labeling_0.4.3.tar.gz"]
+target = "src/labeling_0.4.3-578161a0.tar.gz"
+groups = ["main"]
+metadata = { RemoteHash = "c62f4fc2cc74377d7055903c5f1913b7295f7587456fe468592738a483e264f2" }
 
 [[targets.packages]]
 package = "pillar"
@@ -2421,14 +2546,14 @@ metadata = { RemoteHash = "a5fcec17ba772a561a7375ca8fd966bdd5f20dd4e89b4dae07d7d
 
 [[targets.packages]]
 package = "insight"
-version = "1.6.0"
+version = "1.7.0"
 binary = false
 platform = "source"
 dependencies = []
-sources = ["https://p3m.dev/cran/2026-10-14/src/contrib/insight_1.6.0.tar.gz"]
-target = "src/insight_1.6.0-9841243a.tar.gz"
+sources = ["https://p3m.dev/cran/2026-10-31/src/contrib/insight_1.7.0.tar.gz"]
+target = "src/insight_1.7.0-a441919b.tar.gz"
 groups = ["main"]
-metadata = { RemoteHash = "ad76d25ca553499ad1e2499d045da5bb3850099496bec764a90ef63f8d519eee" }
+metadata = { RemoteHash = "eaeb3c9d23d9478e0902c3d7c30f57a20a2d346d89ad4d7427a274ad4fbe38db" }
 
 [[targets.packages]]
 package = "pulse"
@@ -2445,6 +2570,7 @@ dependencies = [
     "glue",
     "here",
     "keyring",
+    "labelled",
     "purrr",
     "qs2",
     "qualtRics",
@@ -2458,7 +2584,7 @@ sources = ["."]
 target = ""
 groups = ["main"]
 is_project = true
-metadata = { RemoteSha = "79b1b734dbed82224facc7881a97bd078d9cd717adfa1ddb4dfee1303edc96fc", RemoteType = "local", RemoteUrl = "." }
+metadata = { RemoteSha = "867629291e8e3f12a20fa7b9f901899a1c5973acd05aa6cfee30af2e4769a620", RemoteType = "local", RemoteUrl = "." }
 
 [[targets]]
 r_version = "4.6.1"
@@ -2499,6 +2625,10 @@ constraint = "*"
 
 [[targets.direct_dependencies]]
 name = "keyring"
+constraint = "*"
+
+[[targets.direct_dependencies]]
+name = "labelled"
 constraint = "*"
 
 [[targets.direct_dependencies]]
@@ -2550,14 +2680,14 @@ metadata = { RemoteHash = "5c035e74fd05dfa59b03afe0d5f4c53fbf34144e175e90c53d09c
 
 [[targets.packages]]
 package = "openssl"
-version = "2.4.2"
+version = "2.5.0"
 binary = true
 platform = "x86_64-unknown-linux-gnu"
 dependencies = ["askpass"]
-sources = ["https://p3m.dev/cran/2026-06-10/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/openssl_2.4.2.tar.gz"]
-target = "bin/linux/manylinux_2_28-x86_64/4.6/openssl_2.4.2-53152ce1.tar.gz"
+sources = ["https://p3m.dev/cran/2026-11-03/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/openssl_2.5.0.tar.gz"]
+target = "bin/linux/manylinux_2_28-x86_64/4.6/openssl_2.5.0-89e44ad8.tar.gz"
 groups = ["main"]
-metadata = { RemoteHash = "1fc030ad0a008472eac7f086666a7623bdbe6d27c5fdb07b5510f56545d2f4e7" }
+metadata = { RemoteHash = "4b3adad396c62f8cec664368c713f393a9e5345f9fe7353809b8b80027392ffb" }
 
 [[targets.packages]]
 package = "stringi"
@@ -2796,20 +2926,6 @@ groups = ["dev"]
 metadata = { RemoteHash = "54468da73dd78fc9e7c565c41cfe3331802c2134b2e61a9ad197215317092f26" }
 
 [[targets.packages]]
-package = "stringfish"
-version = "0.19.2"
-binary = true
-platform = "x86_64-unknown-linux-gnu"
-dependencies = [
-    "Rcpp",
-    "RcppParallel",
-]
-sources = ["https://p3m.dev/cran/2026-08-28/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/stringfish_0.19.2.tar.gz"]
-target = "bin/linux/manylinux_2_28-x86_64/4.6/stringfish_0.19.2-d59340a7.tar.gz"
-groups = ["main"]
-metadata = { RemoteHash = "424e9b2c69f5b7af74753e401cfaf9e9be08729dda99bdf0946ea53849e9aad0", RemoteLinkingToHashes = "Rcpp@1.1.2=2746cf2fb188e5f0a84dbf5c8f68915b54564ed33e5754572f174e7b32e7f4f3, RcppParallel@6.2.1=6d076439020f64f502552ae924e93f62b6fefd2bb5c193987751dc7a48826ebc" }
-
-[[targets.packages]]
 package = "waldo"
 version = "0.6.2"
 binary = true
@@ -2835,6 +2951,17 @@ sources = ["https://p3m.dev/cran/2026-04-21/bin/linux/manylinux_2_28-x86_64/4.6/
 target = "bin/linux/manylinux_2_28-x86_64/4.6/ps_1.9.3-be551c7f.tar.gz"
 groups = ["dev"]
 metadata = { RemoteHash = "7b227f0627709a2073daf960ac612a0b87d03e18f7dd5c1938048ed440ef2e68" }
+
+[[targets.packages]]
+package = "curl"
+version = "8.1.0"
+binary = true
+platform = "x86_64-unknown-linux-gnu"
+dependencies = []
+sources = ["https://p3m.dev/cran/2026-10-15/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/curl_8.1.0.tar.gz"]
+target = "bin/linux/manylinux_2_28-x86_64/4.6/curl_8.1.0-edf1176c.tar.gz"
+groups = ["main"]
+metadata = { RemoteHash = "ab3907ac4f063d614c778b8540d7e2e7b108dc6ab82c42e471cff2a1ca21205b" }
 
 [[targets.packages]]
 package = "processx"
@@ -2890,17 +3017,6 @@ groups = ["main"]
 metadata = { RemoteHash = "4adf8cea7a24012ec883da1723eaade26c69455e0a3200bdc12f2f9f8515982c" }
 
 [[targets.packages]]
-package = "curl"
-version = "8.1.0"
-binary = true
-platform = "x86_64-unknown-linux-gnu"
-dependencies = []
-sources = ["https://p3m.dev/cran/2026-10-15/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/curl_8.1.0.tar.gz"]
-target = "bin/linux/manylinux_2_28-x86_64/4.6/curl_8.1.0-edf1176c.tar.gz"
-groups = ["main"]
-metadata = { RemoteHash = "ab3907ac4f063d614c778b8540d7e2e7b108dc6ab82c42e471cff2a1ca21205b" }
-
-[[targets.packages]]
 package = "yaml"
 version = "2.3.12"
 binary = true
@@ -2938,6 +3054,17 @@ sources = ["https://p3m.dev/cran/2025-03-18/bin/linux/manylinux_2_28-x86_64/4.6/
 target = "bin/linux/manylinux_2_28-x86_64/4.6/mime_0.13-1d43468f.tar.gz"
 groups = ["main"]
 metadata = { RemoteHash = "7132834cf3c3388eff12bad376d69fbcf8275acc37d36c290e59174fe3c7f3eb" }
+
+[[targets.packages]]
+package = "charport"
+version = "0.1.1"
+binary = true
+platform = "x86_64-unknown-linux-gnu"
+dependencies = []
+sources = ["https://p3m.dev/cran/2026-09-22/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/charport_0.1.1.tar.gz"]
+target = "bin/linux/manylinux_2_28-x86_64/4.6/charport_0.1.1-46fde092.tar.gz"
+groups = ["main"]
+metadata = { RemoteHash = "9c48dd2aff4c977cd64bdda5dca746f550de679e0c25b33563636a07c90a2818" }
 
 [[targets.packages]]
 package = "withr"
@@ -3027,29 +3154,29 @@ metadata = { RemoteHash = "3e74a0685541efb5ea763b92cfd5c859df71c46b0605967a0b5db
 
 [[targets.packages]]
 package = "qs2"
-version = "0.3.1"
+version = "0.4.0"
 binary = true
 platform = "x86_64-unknown-linux-gnu"
 dependencies = [
-    "stringfish",
     "Rcpp",
+    "charport",
     "RcppParallel",
 ]
-sources = ["https://p3m.dev/cran/2026-08-28/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/qs2_0.3.1.tar.gz"]
-target = "bin/linux/manylinux_2_28-x86_64/4.6/qs2_0.3.1-994ce001.tar.gz"
+sources = ["https://p3m.dev/cran/2026-11-03/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/qs2_0.4.0.tar.gz"]
+target = "bin/linux/manylinux_2_28-x86_64/4.6/qs2_0.4.0-d84a8cb5.tar.gz"
 groups = ["main"]
-metadata = { RemoteHash = "1d555e5c38cf352209aeefb0355aa95bc04cda4af229a2a32c26d5582723b942", RemoteLinkingToHashes = "Rcpp@1.1.2=2746cf2fb188e5f0a84dbf5c8f68915b54564ed33e5754572f174e7b32e7f4f3, RcppParallel@6.2.1=6d076439020f64f502552ae924e93f62b6fefd2bb5c193987751dc7a48826ebc" }
+metadata = { RemoteHash = "9ab39bcaca5bfc2b56420ca155d48a05a06a273fbcf77290b65799d8e8dee351", RemoteLinkingToHashes = "Rcpp@1.1.2=2746cf2fb188e5f0a84dbf5c8f68915b54564ed33e5754572f174e7b32e7f4f3, RcppParallel@6.2.1=6d076439020f64f502552ae924e93f62b6fefd2bb5c193987751dc7a48826ebc, charport@0.1.1=9c48dd2aff4c977cd64bdda5dca746f550de679e0c25b33563636a07c90a2818" }
 
 [[targets.packages]]
 package = "datawizard"
-version = "1.4.0"
+version = "1.4.1"
 binary = true
 platform = "x86_64-unknown-linux-gnu"
 dependencies = ["insight"]
-sources = ["https://p3m.dev/cran/2026-09-11/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/datawizard_1.4.0.tar.gz"]
-target = "bin/linux/manylinux_2_28-x86_64/4.6/datawizard_1.4.0-1de8b3ec.tar.gz"
+sources = ["https://p3m.dev/cran/2026-10-19/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/datawizard_1.4.1.tar.gz"]
+target = "bin/linux/manylinux_2_28-x86_64/4.6/datawizard_1.4.1-265e1e28.tar.gz"
 groups = ["main"]
-metadata = { RemoteHash = "6767455980dcf015afec88b21ce546552401264b17cc61f971182521f5f3b479" }
+metadata = { RemoteHash = "1e92b555a5e03ef1b4eeeecf830f790d86d4891091b79ca92d61ad24743406ab" }
 
 [[targets.packages]]
 package = "here"
@@ -3061,6 +3188,28 @@ sources = ["https://p3m.dev/cran/2025-09-16/bin/linux/manylinux_2_28-x86_64/4.6/
 target = "bin/linux/manylinux_2_28-x86_64/4.6/here_1.0.2-5bf49ea0.tar.gz"
 groups = ["main"]
 metadata = { RemoteHash = "71980aa294314d6e032e680dfd2a59f792cab6f8d414cce03f2e823819190c3d" }
+
+[[targets.packages]]
+package = "haven"
+version = "2.5.5"
+binary = true
+platform = "x86_64-unknown-linux-gnu"
+dependencies = [
+    "vctrs",
+    "hms",
+    "tibble",
+    "cpp11",
+    "forcats",
+    "lifecycle",
+    "readr",
+    "cli",
+    "rlang",
+    "tidyselect",
+]
+sources = ["https://p3m.dev/cran/2026-05-07/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/haven_2.5.5.tar.gz"]
+target = "bin/linux/manylinux_2_28-x86_64/4.6/haven_2.5.5-7e921b2f.tar.gz"
+groups = ["main"]
+metadata = { RemoteHash = "9482cd9c3760e1838acf687235317fed97fa6bf79219d3216f0ea447d4b1c9a5", RemoteLinkingToHashes = "cpp11@0.5.5=72486beb0605c1229bf3d422cd536224af8dc09bd389a3116f62f4c7705c62f4" }
 
 [[targets.packages]]
 package = "stringr"
@@ -3172,15 +3321,25 @@ groups = ["dev"]
 metadata = { RemoteHash = "47aac79f889a828a5f8b4756cb972d7c2966bb984cbae17a4bd2389a73270794" }
 
 [[targets.packages]]
-package = "S7"
-version = "0.2.2"
+package = "labelled"
+version = "2.16.1"
 binary = true
 platform = "x86_64-unknown-linux-gnu"
-dependencies = []
-sources = ["https://p3m.dev/cran/2026-04-23/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/S7_0.2.2.tar.gz"]
-target = "bin/linux/manylinux_2_28-x86_64/4.6/S7_0.2.2-4c0c9d16.tar.gz"
+dependencies = [
+    "haven",
+    "lifecycle",
+    "stringr",
+    "tidyr",
+    "cli",
+    "dplyr",
+    "rlang",
+    "vctrs",
+    "tidyselect",
+]
+sources = ["https://p3m.dev/cran/2026-08-21/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/labelled_2.16.1.tar.gz"]
+target = "bin/linux/manylinux_2_28-x86_64/4.6/labelled_2.16.1-cb55aee2.tar.gz"
 groups = ["main"]
-metadata = { RemoteHash = "6f33245dde05b74265b1c4d379e034bc3a8923d41e7b52e6e75a75ce97d42af7" }
+metadata = { RemoteHash = "1263eef0f65ee0ee32d92085c7c7cdfb81f696fce54aaa7598f606ea172cb00a" }
 
 [[targets.packages]]
 package = "glue"
@@ -3195,6 +3354,17 @@ groups = [
     "main",
 ]
 metadata = { RemoteHash = "1c55905d3efc3d5c199ceb0bd12218e97f0d4c64df6038ff41ecef415478a122" }
+
+[[targets.packages]]
+package = "S7"
+version = "0.2.2"
+binary = true
+platform = "x86_64-unknown-linux-gnu"
+dependencies = []
+sources = ["https://p3m.dev/cran/2026-04-23/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/S7_0.2.2.tar.gz"]
+target = "bin/linux/manylinux_2_28-x86_64/4.6/S7_0.2.2-4c0c9d16.tar.gz"
+groups = ["main"]
+metadata = { RemoteHash = "6f33245dde05b74265b1c4d379e034bc3a8923d41e7b52e6e75a75ce97d42af7" }
 
 [[targets.packages]]
 package = "archive"
@@ -3257,15 +3427,22 @@ groups = ["main"]
 metadata = { RemoteHash = "f059f27e2a5c82e351fe05b87ad712f7afc273c651450453f59d99af5deeacea" }
 
 [[targets.packages]]
-package = "labeling"
-version = "0.4.3"
+package = "forcats"
+version = "1.0.1"
 binary = true
 platform = "x86_64-unknown-linux-gnu"
-dependencies = []
-sources = ["https://p3m.dev/cran/2023-08-30/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/labeling_0.4.3.tar.gz"]
-target = "bin/linux/manylinux_2_28-x86_64/4.6/labeling_0.4.3-578161a0.tar.gz"
+dependencies = [
+    "tibble",
+    "cli",
+    "glue",
+    "lifecycle",
+    "magrittr",
+    "rlang",
+]
+sources = ["https://p3m.dev/cran/2025-09-26/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/forcats_1.0.1.tar.gz"]
+target = "bin/linux/manylinux_2_28-x86_64/4.6/forcats_1.0.1-6eae3f2f.tar.gz"
 groups = ["main"]
-metadata = { RemoteHash = "c62f4fc2cc74377d7055903c5f1913b7295f7587456fe468592738a483e264f2" }
+metadata = { RemoteHash = "1de46b83b7038a293e612775197b7ffe47bd079cd2385aa7c65e98171bbd3605" }
 
 [[targets.packages]]
 package = "pkgload"
@@ -3287,6 +3464,17 @@ sources = ["https://p3m.dev/cran/2026-06-16/bin/linux/manylinux_2_28-x86_64/4.6/
 target = "bin/linux/manylinux_2_28-x86_64/4.6/pkgload_1.5.3-83cb9fd0.tar.gz"
 groups = ["dev"]
 metadata = { RemoteHash = "5e539f91ca36b8ed80933101baf2a57462b9342c68556f5d4dcb86c01639df28" }
+
+[[targets.packages]]
+package = "labeling"
+version = "0.4.3"
+binary = true
+platform = "x86_64-unknown-linux-gnu"
+dependencies = []
+sources = ["https://p3m.dev/cran/2023-08-30/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/labeling_0.4.3.tar.gz"]
+target = "bin/linux/manylinux_2_28-x86_64/4.6/labeling_0.4.3-578161a0.tar.gz"
+groups = ["main"]
+metadata = { RemoteHash = "c62f4fc2cc74377d7055903c5f1913b7295f7587456fe468592738a483e264f2" }
 
 [[targets.packages]]
 package = "pillar"
@@ -3641,14 +3829,14 @@ metadata = { RemoteHash = "a5fcec17ba772a561a7375ca8fd966bdd5f20dd4e89b4dae07d7d
 
 [[targets.packages]]
 package = "insight"
-version = "1.6.0"
+version = "1.7.0"
 binary = true
 platform = "x86_64-unknown-linux-gnu"
 dependencies = []
-sources = ["https://p3m.dev/cran/2026-10-14/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/insight_1.6.0.tar.gz"]
-target = "bin/linux/manylinux_2_28-x86_64/4.6/insight_1.6.0-9841243a.tar.gz"
+sources = ["https://p3m.dev/cran/2026-10-31/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/insight_1.7.0.tar.gz"]
+target = "bin/linux/manylinux_2_28-x86_64/4.6/insight_1.7.0-a441919b.tar.gz"
 groups = ["main"]
-metadata = { RemoteHash = "ad76d25ca553499ad1e2499d045da5bb3850099496bec764a90ef63f8d519eee" }
+metadata = { RemoteHash = "eaeb3c9d23d9478e0902c3d7c30f57a20a2d346d89ad4d7427a274ad4fbe38db" }
 
 [[targets.packages]]
 package = "pulse"
@@ -3665,6 +3853,7 @@ dependencies = [
     "glue",
     "here",
     "keyring",
+    "labelled",
     "purrr",
     "qs2",
     "qualtRics",
@@ -3678,7 +3867,7 @@ sources = ["."]
 target = ""
 groups = ["main"]
 is_project = true
-metadata = { RemoteSha = "79b1b734dbed82224facc7881a97bd078d9cd717adfa1ddb4dfee1303edc96fc", RemoteType = "local", RemoteUrl = "." }
+metadata = { RemoteSha = "867629291e8e3f12a20fa7b9f901899a1c5973acd05aa6cfee30af2e4769a620", RemoteType = "local", RemoteUrl = "." }
 
 [[targets]]
 r_version = "4.6.1"
@@ -3719,6 +3908,10 @@ constraint = "*"
 
 [[targets.direct_dependencies]]
 name = "keyring"
+constraint = "*"
+
+[[targets.direct_dependencies]]
+name = "labelled"
 constraint = "*"
 
 [[targets.direct_dependencies]]
@@ -3770,14 +3963,14 @@ metadata = { RemoteHash = "5c035e74fd05dfa59b03afe0d5f4c53fbf34144e175e90c53d09c
 
 [[targets.packages]]
 package = "openssl"
-version = "2.4.2"
+version = "2.5.0"
 binary = true
 platform = "x86_64-w64-mingw32"
 dependencies = ["askpass"]
-sources = ["https://p3m.dev/cran/2026-06-10/bin/windows/contrib/4.6/openssl_2.4.2.zip"]
-target = "bin/windows/4.6/openssl_2.4.2-53152ce1.zip"
+sources = ["https://p3m.dev/cran/2026-11-03/bin/windows/contrib/4.6/openssl_2.5.0.zip"]
+target = "bin/windows/4.6/openssl_2.5.0-89e44ad8.zip"
 groups = ["main"]
-metadata = { RemoteHash = "1fc030ad0a008472eac7f086666a7623bdbe6d27c5fdb07b5510f56545d2f4e7" }
+metadata = { RemoteHash = "4b3adad396c62f8cec664368c713f393a9e5345f9fe7353809b8b80027392ffb" }
 
 [[targets.packages]]
 package = "stringi"
@@ -4016,20 +4209,6 @@ groups = ["dev"]
 metadata = { RemoteHash = "54468da73dd78fc9e7c565c41cfe3331802c2134b2e61a9ad197215317092f26" }
 
 [[targets.packages]]
-package = "stringfish"
-version = "0.19.2"
-binary = true
-platform = "x86_64-w64-mingw32"
-dependencies = [
-    "Rcpp",
-    "RcppParallel",
-]
-sources = ["https://p3m.dev/cran/2026-08-28/bin/windows/contrib/4.6/stringfish_0.19.2.zip"]
-target = "bin/windows/4.6/stringfish_0.19.2-d59340a7.zip"
-groups = ["main"]
-metadata = { RemoteHash = "424e9b2c69f5b7af74753e401cfaf9e9be08729dda99bdf0946ea53849e9aad0", RemoteLinkingToHashes = "Rcpp@1.1.2=2746cf2fb188e5f0a84dbf5c8f68915b54564ed33e5754572f174e7b32e7f4f3, RcppParallel@6.2.1=6d076439020f64f502552ae924e93f62b6fefd2bb5c193987751dc7a48826ebc" }
-
-[[targets.packages]]
 package = "waldo"
 version = "0.6.2"
 binary = true
@@ -4055,6 +4234,17 @@ sources = ["https://p3m.dev/cran/2026-04-21/bin/windows/contrib/4.6/ps_1.9.3.zip
 target = "bin/windows/4.6/ps_1.9.3-be551c7f.zip"
 groups = ["dev"]
 metadata = { RemoteHash = "7b227f0627709a2073daf960ac612a0b87d03e18f7dd5c1938048ed440ef2e68" }
+
+[[targets.packages]]
+package = "curl"
+version = "8.1.0"
+binary = true
+platform = "x86_64-w64-mingw32"
+dependencies = []
+sources = ["https://p3m.dev/cran/2026-10-15/bin/windows/contrib/4.6/curl_8.1.0.zip"]
+target = "bin/windows/4.6/curl_8.1.0-edf1176c.zip"
+groups = ["main"]
+metadata = { RemoteHash = "ab3907ac4f063d614c778b8540d7e2e7b108dc6ab82c42e471cff2a1ca21205b" }
 
 [[targets.packages]]
 package = "processx"
@@ -4110,17 +4300,6 @@ groups = ["main"]
 metadata = { RemoteHash = "4adf8cea7a24012ec883da1723eaade26c69455e0a3200bdc12f2f9f8515982c" }
 
 [[targets.packages]]
-package = "curl"
-version = "8.1.0"
-binary = true
-platform = "x86_64-w64-mingw32"
-dependencies = []
-sources = ["https://p3m.dev/cran/2026-10-15/bin/windows/contrib/4.6/curl_8.1.0.zip"]
-target = "bin/windows/4.6/curl_8.1.0-edf1176c.zip"
-groups = ["main"]
-metadata = { RemoteHash = "ab3907ac4f063d614c778b8540d7e2e7b108dc6ab82c42e471cff2a1ca21205b" }
-
-[[targets.packages]]
 package = "yaml"
 version = "2.3.12"
 binary = true
@@ -4158,6 +4337,17 @@ sources = ["https://p3m.dev/cran/2025-03-18/bin/windows/contrib/4.6/mime_0.13.zi
 target = "bin/windows/4.6/mime_0.13-1d43468f.zip"
 groups = ["main"]
 metadata = { RemoteHash = "7132834cf3c3388eff12bad376d69fbcf8275acc37d36c290e59174fe3c7f3eb" }
+
+[[targets.packages]]
+package = "charport"
+version = "0.1.1"
+binary = true
+platform = "x86_64-w64-mingw32"
+dependencies = []
+sources = ["https://p3m.dev/cran/2026-09-22/bin/windows/contrib/4.6/charport_0.1.1.zip"]
+target = "bin/windows/4.6/charport_0.1.1-46fde092.zip"
+groups = ["main"]
+metadata = { RemoteHash = "9c48dd2aff4c977cd64bdda5dca746f550de679e0c25b33563636a07c90a2818" }
 
 [[targets.packages]]
 package = "withr"
@@ -4247,29 +4437,29 @@ metadata = { RemoteHash = "3e74a0685541efb5ea763b92cfd5c859df71c46b0605967a0b5db
 
 [[targets.packages]]
 package = "qs2"
-version = "0.3.1"
+version = "0.4.0"
 binary = true
 platform = "x86_64-w64-mingw32"
 dependencies = [
-    "stringfish",
     "Rcpp",
+    "charport",
     "RcppParallel",
 ]
-sources = ["https://p3m.dev/cran/2026-08-28/bin/windows/contrib/4.6/qs2_0.3.1.zip"]
-target = "bin/windows/4.6/qs2_0.3.1-994ce001.zip"
+sources = ["https://p3m.dev/cran/2026-11-03/bin/windows/contrib/4.6/qs2_0.4.0.zip"]
+target = "bin/windows/4.6/qs2_0.4.0-d84a8cb5.zip"
 groups = ["main"]
-metadata = { RemoteHash = "1d555e5c38cf352209aeefb0355aa95bc04cda4af229a2a32c26d5582723b942", RemoteLinkingToHashes = "Rcpp@1.1.2=2746cf2fb188e5f0a84dbf5c8f68915b54564ed33e5754572f174e7b32e7f4f3, RcppParallel@6.2.1=6d076439020f64f502552ae924e93f62b6fefd2bb5c193987751dc7a48826ebc" }
+metadata = { RemoteHash = "9ab39bcaca5bfc2b56420ca155d48a05a06a273fbcf77290b65799d8e8dee351", RemoteLinkingToHashes = "Rcpp@1.1.2=2746cf2fb188e5f0a84dbf5c8f68915b54564ed33e5754572f174e7b32e7f4f3, RcppParallel@6.2.1=6d076439020f64f502552ae924e93f62b6fefd2bb5c193987751dc7a48826ebc, charport@0.1.1=9c48dd2aff4c977cd64bdda5dca746f550de679e0c25b33563636a07c90a2818" }
 
 [[targets.packages]]
 package = "datawizard"
-version = "1.4.0"
+version = "1.4.1"
 binary = true
 platform = "x86_64-w64-mingw32"
 dependencies = ["insight"]
-sources = ["https://p3m.dev/cran/2026-09-11/bin/windows/contrib/4.6/datawizard_1.4.0.zip"]
-target = "bin/windows/4.6/datawizard_1.4.0-1de8b3ec.zip"
+sources = ["https://p3m.dev/cran/2026-10-19/bin/windows/contrib/4.6/datawizard_1.4.1.zip"]
+target = "bin/windows/4.6/datawizard_1.4.1-265e1e28.zip"
 groups = ["main"]
-metadata = { RemoteHash = "6767455980dcf015afec88b21ce546552401264b17cc61f971182521f5f3b479" }
+metadata = { RemoteHash = "1e92b555a5e03ef1b4eeeecf830f790d86d4891091b79ca92d61ad24743406ab" }
 
 [[targets.packages]]
 package = "here"
@@ -4281,6 +4471,28 @@ sources = ["https://p3m.dev/cran/2025-09-16/bin/windows/contrib/4.6/here_1.0.2.z
 target = "bin/windows/4.6/here_1.0.2-5bf49ea0.zip"
 groups = ["main"]
 metadata = { RemoteHash = "71980aa294314d6e032e680dfd2a59f792cab6f8d414cce03f2e823819190c3d" }
+
+[[targets.packages]]
+package = "haven"
+version = "2.5.5"
+binary = true
+platform = "x86_64-w64-mingw32"
+dependencies = [
+    "vctrs",
+    "hms",
+    "tibble",
+    "cpp11",
+    "forcats",
+    "lifecycle",
+    "readr",
+    "cli",
+    "rlang",
+    "tidyselect",
+]
+sources = ["https://p3m.dev/cran/2026-05-07/bin/windows/contrib/4.6/haven_2.5.5.zip"]
+target = "bin/windows/4.6/haven_2.5.5-7e921b2f.zip"
+groups = ["main"]
+metadata = { RemoteHash = "9482cd9c3760e1838acf687235317fed97fa6bf79219d3216f0ea447d4b1c9a5", RemoteLinkingToHashes = "cpp11@0.5.5=72486beb0605c1229bf3d422cd536224af8dc09bd389a3116f62f4c7705c62f4" }
 
 [[targets.packages]]
 package = "stringr"
@@ -4392,15 +4604,25 @@ groups = ["dev"]
 metadata = { RemoteHash = "47aac79f889a828a5f8b4756cb972d7c2966bb984cbae17a4bd2389a73270794" }
 
 [[targets.packages]]
-package = "S7"
-version = "0.2.2"
+package = "labelled"
+version = "2.16.1"
 binary = true
 platform = "x86_64-w64-mingw32"
-dependencies = []
-sources = ["https://p3m.dev/cran/2026-04-23/bin/windows/contrib/4.6/S7_0.2.2.zip"]
-target = "bin/windows/4.6/S7_0.2.2-4c0c9d16.zip"
+dependencies = [
+    "haven",
+    "lifecycle",
+    "stringr",
+    "tidyr",
+    "cli",
+    "dplyr",
+    "rlang",
+    "vctrs",
+    "tidyselect",
+]
+sources = ["https://p3m.dev/cran/2026-08-21/bin/windows/contrib/4.6/labelled_2.16.1.zip"]
+target = "bin/windows/4.6/labelled_2.16.1-cb55aee2.zip"
 groups = ["main"]
-metadata = { RemoteHash = "6f33245dde05b74265b1c4d379e034bc3a8923d41e7b52e6e75a75ce97d42af7" }
+metadata = { RemoteHash = "1263eef0f65ee0ee32d92085c7c7cdfb81f696fce54aaa7598f606ea172cb00a" }
 
 [[targets.packages]]
 package = "glue"
@@ -4415,6 +4637,17 @@ groups = [
     "main",
 ]
 metadata = { RemoteHash = "1c55905d3efc3d5c199ceb0bd12218e97f0d4c64df6038ff41ecef415478a122" }
+
+[[targets.packages]]
+package = "S7"
+version = "0.2.2"
+binary = true
+platform = "x86_64-w64-mingw32"
+dependencies = []
+sources = ["https://p3m.dev/cran/2026-04-23/bin/windows/contrib/4.6/S7_0.2.2.zip"]
+target = "bin/windows/4.6/S7_0.2.2-4c0c9d16.zip"
+groups = ["main"]
+metadata = { RemoteHash = "6f33245dde05b74265b1c4d379e034bc3a8923d41e7b52e6e75a75ce97d42af7" }
 
 [[targets.packages]]
 package = "archive"
@@ -4477,15 +4710,22 @@ groups = ["main"]
 metadata = { RemoteHash = "f059f27e2a5c82e351fe05b87ad712f7afc273c651450453f59d99af5deeacea" }
 
 [[targets.packages]]
-package = "labeling"
-version = "0.4.3"
+package = "forcats"
+version = "1.0.1"
 binary = true
 platform = "x86_64-w64-mingw32"
-dependencies = []
-sources = ["https://p3m.dev/cran/2023-08-30/bin/windows/contrib/4.6/labeling_0.4.3.zip"]
-target = "bin/windows/4.6/labeling_0.4.3-578161a0.zip"
+dependencies = [
+    "tibble",
+    "cli",
+    "glue",
+    "lifecycle",
+    "magrittr",
+    "rlang",
+]
+sources = ["https://p3m.dev/cran/2025-09-26/bin/windows/contrib/4.6/forcats_1.0.1.zip"]
+target = "bin/windows/4.6/forcats_1.0.1-6eae3f2f.zip"
 groups = ["main"]
-metadata = { RemoteHash = "c62f4fc2cc74377d7055903c5f1913b7295f7587456fe468592738a483e264f2" }
+metadata = { RemoteHash = "1de46b83b7038a293e612775197b7ffe47bd079cd2385aa7c65e98171bbd3605" }
 
 [[targets.packages]]
 package = "pkgload"
@@ -4507,6 +4747,17 @@ sources = ["https://p3m.dev/cran/2026-06-16/bin/windows/contrib/4.6/pkgload_1.5.
 target = "bin/windows/4.6/pkgload_1.5.3-83cb9fd0.zip"
 groups = ["dev"]
 metadata = { RemoteHash = "5e539f91ca36b8ed80933101baf2a57462b9342c68556f5d4dcb86c01639df28" }
+
+[[targets.packages]]
+package = "labeling"
+version = "0.4.3"
+binary = true
+platform = "x86_64-w64-mingw32"
+dependencies = []
+sources = ["https://p3m.dev/cran/2023-08-30/bin/windows/contrib/4.6/labeling_0.4.3.zip"]
+target = "bin/windows/4.6/labeling_0.4.3-578161a0.zip"
+groups = ["main"]
+metadata = { RemoteHash = "c62f4fc2cc74377d7055903c5f1913b7295f7587456fe468592738a483e264f2" }
 
 [[targets.packages]]
 package = "pillar"
@@ -4861,14 +5112,14 @@ metadata = { RemoteHash = "a5fcec17ba772a561a7375ca8fd966bdd5f20dd4e89b4dae07d7d
 
 [[targets.packages]]
 package = "insight"
-version = "1.6.0"
+version = "1.7.0"
 binary = true
 platform = "x86_64-w64-mingw32"
 dependencies = []
-sources = ["https://p3m.dev/cran/2026-10-14/bin/windows/contrib/4.6/insight_1.6.0.zip"]
-target = "bin/windows/4.6/insight_1.6.0-9841243a.zip"
+sources = ["https://p3m.dev/cran/2026-10-31/bin/windows/contrib/4.6/insight_1.7.0.zip"]
+target = "bin/windows/4.6/insight_1.7.0-a441919b.zip"
 groups = ["main"]
-metadata = { RemoteHash = "ad76d25ca553499ad1e2499d045da5bb3850099496bec764a90ef63f8d519eee" }
+metadata = { RemoteHash = "eaeb3c9d23d9478e0902c3d7c30f57a20a2d346d89ad4d7427a274ad4fbe38db" }
 
 [[targets.packages]]
 package = "pulse"
@@ -4885,6 +5136,7 @@ dependencies = [
     "glue",
     "here",
     "keyring",
+    "labelled",
     "purrr",
     "qs2",
     "qualtRics",
@@ -4898,4 +5150,4 @@ sources = ["."]
 target = ""
 groups = ["main"]
 is_project = true
-metadata = { RemoteSha = "79b1b734dbed82224facc7881a97bd078d9cd717adfa1ddb4dfee1303edc96fc", RemoteType = "local", RemoteUrl = "." }
+metadata = { RemoteSha = "867629291e8e3f12a20fa7b9f901899a1c5973acd05aa6cfee30af2e4769a620", RemoteType = "local", RemoteUrl = "." }

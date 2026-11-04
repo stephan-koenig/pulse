@@ -2,7 +2,9 @@
 
 export(label_wrap_gen_md)
 export(load_survey)
+export(mutate_preserving_labels)
 export(pivot_labels_longer)
+export(separate_longer_delim_preserving_labels)
 export(str_wrap_md)
 importFrom(rlang,
   ":=",
