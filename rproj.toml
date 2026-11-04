@@ -38,6 +38,7 @@ sjlabelled = "*"
 stringr = "*"
 tibble = "*"
 tidyr = "*"
+askpass = "*"
 
 [dependency-groups.dev]
 testthat = ">= 3.0.0"

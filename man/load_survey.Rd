@@ -21,9 +21,13 @@ your Qualtrics account without \verb{https://}. Find your base URL at
 \item{file}{A character scalar. File to write to or load the data from. If
 \code{NULL} (the default), the survey is downloaded without being saved.}
 
-\item{api_keyring_id}{A character scalar. Name of your Qualtrics API token as
-saved in your operating system's credential store and accessed with
-\link[keyring:keyring]{keyring}. See
+\item{api_keyring_id}{A character scalar. The name of your Qualtrics API
+token as saved in your operating system's credential store. If none
+is found under this name, you will be prompted to provide an API token and
+it will be stored. Credential is managed with \link[keyring:keyring]{keyring}. If \code{NULL} and if
+no local copy of your file exists, you will be prompted for an API token , but
+the token will not be saved.
+See
 \href{https://www.qualtrics.com/support/integrations/api-integration/overview/#GeneratingAnAPIToken}{Generating an API Token | Getting Started with the Qualtrics API}
 for more information. Default is \code{"qualtrics_api_key"}.}
 }

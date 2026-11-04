@@ -14,6 +14,10 @@ platform = "aarch64-apple-darwin"
 bioc-version = "3.23"
 
 [[targets.direct_dependencies]]
+name = "askpass"
+constraint = "*"
+
+[[targets.direct_dependencies]]
 name = "cli"
 constraint = "*"
 
@@ -1242,6 +1246,7 @@ version = "0.0.0.9000"
 binary = false
 platform = "source"
 dependencies = [
+    "askpass",
     "cli",
     "commonmark",
     "dplyr",
@@ -1260,16 +1265,20 @@ dependencies = [
     "tibble",
     "tidyr",
 ]
-sources = ["file:///Users/stephankoenig/Documents/github/pulse/"]
+sources = ["."]
 target = ""
 groups = ["main"]
 is_project = true
-metadata = { RemoteSha = "5c11107b027677d5d8c2edab2287ce5a75e7db79950d640c0ef30800e3a90eef", RemoteType = "local", RemoteUrl = "/Users/stephankoenig/Documents/github/pulse" }
+metadata = { RemoteSha = "a173d0b90a4bb31dddbdd9baeca3111e7adaf483e4e4a516a01f2a6efac852d5", RemoteType = "local", RemoteUrl = "." }
 
 [[targets]]
 r_version = "4.6.1"
 platform = "source"
 bioc-version = "3.23"
+
+[[targets.direct_dependencies]]
+name = "askpass"
+constraint = "*"
 
 [[targets.direct_dependencies]]
 name = "cli"
@@ -2512,6 +2521,7 @@ version = "0.0.0.9000"
 binary = false
 platform = "source"
 dependencies = [
+    "askpass",
     "cli",
     "commonmark",
     "dplyr",
@@ -2530,16 +2540,20 @@ dependencies = [
     "tibble",
     "tidyr",
 ]
-sources = ["file:///Users/stephankoenig/Documents/github/pulse/"]
+sources = ["."]
 target = ""
 groups = ["main"]
 is_project = true
-metadata = { RemoteSha = "5c11107b027677d5d8c2edab2287ce5a75e7db79950d640c0ef30800e3a90eef", RemoteType = "local", RemoteUrl = "/Users/stephankoenig/Documents/github/pulse" }
+metadata = { RemoteSha = "a173d0b90a4bb31dddbdd9baeca3111e7adaf483e4e4a516a01f2a6efac852d5", RemoteType = "local", RemoteUrl = "." }
 
 [[targets]]
 r_version = "4.6.1"
 platform = "x86_64-unknown-linux-gnu"
 bioc-version = "3.23"
+
+[[targets.direct_dependencies]]
+name = "askpass"
+constraint = "*"
 
 [[targets.direct_dependencies]]
 name = "cli"
@@ -3274,11 +3288,11 @@ metadata = { RemoteHash = "47aac79f889a828a5f8b4756cb972d7c2966bb984cbae17a4bd23
 [[targets.packages]]
 package = "S7"
 version = "0.2.2"
-binary = true
-platform = "x86_64-unknown-linux-gnu"
+binary = false
+platform = "source"
 dependencies = []
-sources = ["https://p3m.dev/cran/2026-04-23/bin/linux/manylinux_2_28-x86_64/4.6/src/contrib/S7_0.2.2.tar.gz"]
-target = "bin/linux/manylinux_2_28-x86_64/4.6/S7_0.2.2-4c0c9d16.tar.gz"
+sources = ["https://p3m.dev/cran/2026-04-23/src/contrib/S7_0.2.2.tar.gz"]
+target = "src/S7_0.2.2-4c0c9d16.tar.gz"
 groups = ["main"]
 metadata = { RemoteHash = "6f33245dde05b74265b1c4d379e034bc3a8923d41e7b52e6e75a75ce97d42af7" }
 
@@ -3770,6 +3784,7 @@ version = "0.0.0.9000"
 binary = false
 platform = "source"
 dependencies = [
+    "askpass",
     "cli",
     "commonmark",
     "dplyr",
@@ -3788,16 +3803,20 @@ dependencies = [
     "tibble",
     "tidyr",
 ]
-sources = ["file:///Users/stephankoenig/Documents/github/pulse/"]
+sources = ["."]
 target = ""
 groups = ["main"]
 is_project = true
-metadata = { RemoteSha = "5c11107b027677d5d8c2edab2287ce5a75e7db79950d640c0ef30800e3a90eef", RemoteType = "local", RemoteUrl = "/Users/stephankoenig/Documents/github/pulse" }
+metadata = { RemoteSha = "a173d0b90a4bb31dddbdd9baeca3111e7adaf483e4e4a516a01f2a6efac852d5", RemoteType = "local", RemoteUrl = "." }
 
 [[targets]]
 r_version = "4.6.1"
 platform = "x86_64-w64-mingw32"
 bioc-version = "3.23"
+
+[[targets.direct_dependencies]]
+name = "askpass"
+constraint = "*"
 
 [[targets.direct_dependencies]]
 name = "cli"
@@ -4532,11 +4551,11 @@ metadata = { RemoteHash = "47aac79f889a828a5f8b4756cb972d7c2966bb984cbae17a4bd23
 [[targets.packages]]
 package = "S7"
 version = "0.2.2"
-binary = true
-platform = "x86_64-w64-mingw32"
+binary = false
+platform = "source"
 dependencies = []
-sources = ["https://p3m.dev/cran/2026-04-23/bin/windows/contrib/4.6/S7_0.2.2.zip"]
-target = "bin/windows/4.6/S7_0.2.2-4c0c9d16.zip"
+sources = ["https://p3m.dev/cran/2026-04-23/src/contrib/S7_0.2.2.tar.gz"]
+target = "src/S7_0.2.2-4c0c9d16.tar.gz"
 groups = ["main"]
 metadata = { RemoteHash = "6f33245dde05b74265b1c4d379e034bc3a8923d41e7b52e6e75a75ce97d42af7" }
 
@@ -5028,6 +5047,7 @@ version = "0.0.0.9000"
 binary = false
 platform = "source"
 dependencies = [
+    "askpass",
     "cli",
     "commonmark",
     "dplyr",
@@ -5046,8 +5066,8 @@ dependencies = [
     "tibble",
     "tidyr",
 ]
-sources = ["file:///Users/stephankoenig/Documents/github/pulse/"]
+sources = ["."]
 target = ""
 groups = ["main"]
 is_project = true
-metadata = { RemoteSha = "5c11107b027677d5d8c2edab2287ce5a75e7db79950d640c0ef30800e3a90eef", RemoteType = "local", RemoteUrl = "/Users/stephankoenig/Documents/github/pulse" }
+metadata = { RemoteSha = "a173d0b90a4bb31dddbdd9baeca3111e7adaf483e4e4a516a01f2a6efac852d5", RemoteType = "local", RemoteUrl = "." }

@@ -11,6 +11,7 @@ BugReports: https://github.com/stephan-koenig/pulse/issues
 Depends:
     R (>= 4.6)
 Imports:
+    askpass,
     cli,
     commonmark,
     dplyr,
